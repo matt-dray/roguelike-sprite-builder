@@ -3,7 +3,16 @@ source(file.path("R", "build.R"))
 ui <- shiny::fluidPage(
     shiny::titlePanel("Roguelike Sprite Builder"),
     htmltools::p(
-        "A work in progress using",
+        htmltools::a(
+            href = "https://github.com/matt-dray/roguelike-sprite-builder",
+            shiny::icon("github")
+        ),
+        "A work in progress by",
+        htmltools::a(
+            href = "https://www.matt-dray.com/",
+            "matt-dray"
+        ),
+        "using",
         htmltools::a(
             href = "https://kenney.nl/assets/roguelike-characters",
             "the Roguelike Characters pack"
