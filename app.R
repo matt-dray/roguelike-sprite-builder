@@ -25,24 +25,35 @@ ui <- shiny::fluidPage(
         label = "Reroll",
         icon = shiny::icon("dice")
     ),
+    shiny::downloadButton(
+        outputId = "sprite_download",
+        icon = shiny::icon("floppy-disk")
+    ),
     shiny::plotOutput("sprite")
 )
 
 server <- function(input, output) {
 
-    output$sprite <- shiny::renderPlot({
-        list.files(file.path("www", "img"), ".png", full.names = TRUE) |>
-            draw_random_sprite()
-    })
+    rv <- shiny::reactiveValues()  # store parts here, but start empty
 
-    shiny::observeEvent(input$"btn_reroll", {
-        output$sprite <- shiny::renderPlot({
-            list.files(file.path("www", "img"), ".png", full.names = TRUE) |>
-                draw_random_sprite()
+    create_sprite <- reactive({
+        rv$parts <- pick_parts()
+        draw_sprite(rv$parts)
+    }) |>
+        shiny::bindEvent(
+            input$btn_reroll,  # fire on button press
+            ignoreNULL = FALSE  # also fire if input is NULL (i.e. on startup)
+        )
+
+    output$sprite <- shiny::renderPlot(create_sprite())
+
+    output$sprite_download <- shiny::downloadHandler(
+        filename = "sprite.png",
+        content = function(file) {
+            png(file)
+            draw_sprite(rv$parts)
+            dev.off()
         })
-    })
-
-
 
 }
 
