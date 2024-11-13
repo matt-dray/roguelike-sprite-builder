@@ -24,13 +24,13 @@ build_px_geometry <- function(
 
 # Table of spritesheet tile locations for each part type
 part_types <- list(
-  bodies = expand.grid(x = 1:2, y = 1:4),
-  hats = expand.grid(x = 29:32, y = 1:9),
+  body = expand.grid(x = 1:2, y = 1:4),
+  hat = expand.grid(x = 29:32, y = 1:9),
   hair = rbind(
     expand.grid(x = 20:27, y = 1:8),
     expand.grid(x = 20:23, y = 9:12)
   ),
-  jerseys = expand.grid(x = 7:18, y = 1:10),
+  jersey = expand.grid(x = 7:18, y = 1:10),
   trousers = data.frame(
     x = 4,
     y = c(1:4, 6:9)
@@ -39,7 +39,7 @@ part_types <- list(
     x = c(rep(4, 2), rep(5, 10)),
     y = c(5, 10, 1:10)
   ),
-  shields =  rbind(
+  shield =  rbind(
     expand.grid(x = 34:41, y = 1:2),
     expand.grid(x = 34:35, y = 3),
     expand.grid(x = 38:39, y = 3),
@@ -50,7 +50,7 @@ part_types <- list(
     expand.grid(x = 34:35, y = 9),
     expand.grid(x = 38:39, y = 9)
   ),
-  weapons = rbind(
+  weapon = rbind(
     expand.grid(x = 43:54, y = 1:5),
     expand.grid(x = 43:52, y = 6:10)
   )

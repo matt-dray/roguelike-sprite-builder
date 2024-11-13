@@ -1,49 +1,60 @@
-new_canvas <- function(size = 16) {
-  nara::nr_new(size, size)
+pick_part <- function(
+    part_files = list.files(file.path("www", "img"), "\\.png$", full.names = TRUE),
+    part_type = c(
+      "body",
+      "trousers",
+      "shoes",
+      "jersey",
+      "hair",
+      "hat",
+      "shield",
+      "weapon"
+    ),
+    part_weight = 100
+) {
+  part_type <- match.arg(part_type)
+  part_files_type <- part_files[stringr::str_detect(part_files, part_type)]
+  part_file <- sample(part_files_type, 1)
+  if (sample(0:100, 1) <= part_weight) part_file else NULL
 }
 
-read_sprite <- function(file) {
-  png::readPNG(file, native = TRUE)
-}
-
-blit_sprite <- function(sprite, nr) {
-  nara::nr_blit(nr, 0, 0, sprite)
-}
-
-draw_sprite <- function(nr) {
-  grid::grid.newpage()
-  grid::grid.raster(nr, interpolate = FALSE)
-}
-
-draw_random_sprite <- function(
-    part_files,
+pick_parts <- function(
+    part_files = list.files(file.path("www", "img"), "\\.png$", full.names = TRUE),
     part_weights = c(
-      "bodies" = 100,
+      "body" = 100,
       "trousers" = 90,
       "shoes" = 90,
-      "jerseys" = 90,
+      "jersey" = 90,
       "hair" = 90,
-      "hats" = 40,
-      "shields" = 20,
-      "weapons" = 20
+      "hat" = 40,
+      "shield" = 20,
+      "weapon" = 20
     )
 ) {
 
-  nr <- new_canvas()
+  part_types <- names(part_weights)
 
-  for (part in names(part_weights)) {
+  parts <- vector("list", length(part_types)) |> setNames(part_types)
 
-    part_files_type <- part_files[stringr::str_detect(part_files, part)]
-    part_file <- sample(part_files_type, 1)
-
-    weight <- part_weights[[part]]
-
-    if (sample(0:100, 1) <= weight) {
-      part_file |> read_sprite() |> blit_sprite(nr)
-    }
-
+  for (part in part_types) {
+    parts[[part]] <- pick_part(part_files, part, part_weights[part])
   }
 
-  draw_sprite(nr)
+  parts
+
+}
+
+draw_sprite <- function(parts = choose_random_parts(), size = 16) {
+
+  nr <- nara::nr_new(size, size)
+
+  for (file in parts) {
+    file |>
+      png::readPNG(native = TRUE) |>
+      nara::nr_blit(nr, x = 0, y = 0, src = _)
+  }
+
+  grid::grid.newpage()
+  grid::grid.raster(nr, interpolate = FALSE)
 
 }
