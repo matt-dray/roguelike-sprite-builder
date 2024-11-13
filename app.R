@@ -39,6 +39,8 @@ server <- function(input, output) {
     create_sprite <- reactive({
         rv$parts <- pick_parts()
         draw_sprite(rv$parts)
+        rv$hash <- rlang::hash(rv$parts)
+        cat(rv$hash, sep = "\n")
     }) |>
         shiny::bindEvent(
             input$btn_reroll,  # fire on button press
@@ -48,8 +50,8 @@ server <- function(input, output) {
     output$sprite <- shiny::renderPlot(create_sprite())
 
     output$sprite_download <- shiny::downloadHandler(
-        filename = "sprite.png",
-        content = function(file) {
+        filename = \() paste0("sprite_", rv$hash, ".png"),
+        content = \(file) {
             png(file)
             draw_sprite(rv$parts)
             dev.off()
