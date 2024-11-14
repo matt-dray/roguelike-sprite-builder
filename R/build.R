@@ -14,8 +14,7 @@ pick_part <- function(
 ) {
   part_type <- match.arg(part_type)
   part_files_type <- part_files[stringr::str_detect(part_files, part_type)]
-  part_file <- sample(part_files_type, 1)
-  if (sample(0:100, 1) <= part_weight) part_file else NULL
+  if (sample(1:100, 1) <= part_weight) sample(part_files_type, 1) else NULL
 }
 
 pick_parts <- function(
@@ -44,17 +43,22 @@ pick_parts <- function(
 
 }
 
-draw_sprite <- function(parts = choose_random_parts(), size = 16) {
+draw_sprite <- function(parts = pick_parts()) {
 
-  nr <- nara::nr_new(size, size)
-
-  for (file in parts) {
-    file |>
-      png::readPNG(native = TRUE) |>
-      nara::nr_blit(nr, x = 0, y = 0, src = _)
+  # Read all selected sprite parts
+  images <- parts[["body"]] |> magick::image_read()  # start with body
+  for (i in 2:length(parts)) {  # append remaining parts
+    images <- c(images, magick::image_read(parts[[i]]))
   }
 
+  # Write out image mosaic and back in as nativeRaster
+  temp_file <- tempfile(fileext = ".png")
+  on.exit(file.remove(temp_file))
+  images |> magick::image_mosaic() |> magick::image_write(temp_file)
+  sprite_nr <- temp_file |> png::readPNG(native = TRUE)
+
+  # Draw nativeRaster to arbitrary size
   grid::grid.newpage()
-  grid::grid.raster(nr, interpolate = FALSE)
+  grid::grid.raster(sprite_nr, interpolate = FALSE)
 
 }
