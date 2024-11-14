@@ -704,44 +704,6 @@
         "Archs": "mime.so.dSYM"
       }
     },
-    "nara": {
-      "Source": "github",
-      "Repository": null,
-      "description": {
-        "Package": "nara",
-        "Type": "Package",
-        "Title": "Native Raster Image Tools",
-        "Version": "0.1.1.9016",
-        "Authors@R": "c(\n    person(\"Mike\", \"Cheng\", role = c(\"aut\", \"cre\", 'cph'), email = \"mikefc@coolbutuseless.com\")\n    )",
-        "Maintainer": "Mike Cheng <mikefc@coolbutuseless.com>",
-        "Description": "Tools for 'nativeRaster' images.",
-        "URL": "https://github.com/coolbutuseless/nara,\nhttps://coolbutuseless.github.io/package/nara/index.html",
-        "BugReports": "https://github.com/coolbutuseless/nara/issues",
-        "License": "MIT + file LICENSE",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "RoxygenNote": "7.3.1",
-        "Depends": "R (>= 2.10)",
-        "Suggests": "testthat (>= 3.0.0), jpeg, png, purrr, stringr, knitr,\nrmarkdown, magick",
-        "Config/testthat/edition": "3",
-        "Copyright": "The included 'deer' spritesheet is by Calciumtrice and\nlicensed under CC BY 3.0.  See 'inst/LICENSE-deer.txt' for more\ndetails. The included bitmap font 'spleen' was created by\nFrederic Cambus (c) 2018-2024. See 'inst/LICENSE-spleen.txt'\nfor full LICENSE",
-        "VignetteBuilder": "knitr",
-        "RemoteType": "github",
-        "RemoteHost": "api.github.com",
-        "RemoteRepo": "nara",
-        "RemoteUsername": "coolbutuseless",
-        "RemoteRef": "HEAD",
-        "RemoteSha": "076a04b97c054a6a586b50104f922843684a185d",
-        "GithubRepo": "nara",
-        "GithubUsername": "coolbutuseless",
-        "GithubRef": "HEAD",
-        "GithubSHA1": "076a04b97c054a6a586b50104f922843684a185d",
-        "NeedsCompilation": "yes",
-        "Packaged": "2024-06-22 16:29:13 UTC; mattdray",
-        "Author": "Mike Cheng [aut, cre, cph]",
-        "Built": "R 4.4.0; aarch64-apple-darwin20; 2024-06-22 16:29:14 UTC; unix"
-      }
-    },
     "png": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1125,16 +1087,628 @@
       "checksum": "5fe2613f0084cfac9853279a7a336fa2"
     },
     "app.R": {
-      "checksum": "a0f5dacccd2f9dec40b7174e16650690"
+      "checksum": "36319895bf72e01649f1c1f09c83f40b"
     },
     "data-raw/extract.R": {
-      "checksum": "e4c7dada475dd89b14e7462a351fa160"
+      "checksum": "37d1b357b184f53b42a8aa76a3a6acd4"
+    },
+    "docs/shinylive-sw.js": {
+      "checksum": "c1ef187fa733aa5e6019be968285fb91"
+    },
+    "docs/shinylive/browser-4LXWBP4F.js": {
+      "checksum": "cb5d33575d0b24f0247e135dfd5e0336"
+    },
+    "docs/shinylive/browser-MVPLTHEE.js": {
+      "checksum": "e4588d30393519300336279075b5b1f1"
+    },
+    "docs/shinylive/chunk-BQSUMDFT.js": {
+      "checksum": "dc43fe94cf99dc60a16f33bde67ed0f3"
+    },
+    "docs/shinylive/chunk-ZBWGEFNY.js": {
+      "checksum": "fd0e041fb9091f99138578ddde77fd5e"
+    },
+    "docs/shinylive/Editor.css": {
+      "checksum": "1a0dcad8f4b255aef1c4555cf648d227"
+    },
+    "docs/shinylive/Editor.js": {
+      "checksum": "ffbf3daf57865868627d3e93927c8a10"
+    },
+    "docs/shinylive/load-shinylive-sw.js": {
+      "checksum": "2f38b8a208a82a4f2eaeba76516a1b55"
+    },
+    "docs/shinylive/lzstring-worker.js": {
+      "checksum": "10aea388ec796a8830668a75e828578c"
+    },
+    "docs/shinylive/pyodide-worker.js": {
+      "checksum": "e39a41d619cffdf24622fc57eb5daa50"
+    },
+    "docs/shinylive/run-python-blocks.js": {
+      "checksum": "51a6afdd7da06d0fe4b150c3cec29d84"
+    },
+    "docs/shinylive/shinylive.css": {
+      "checksum": "db7517141ec82a5492f229ff01cae905"
+    },
+    "docs/shinylive/shinylive.js": {
+      "checksum": "5e0018e1091a97eeb3857ec090a9a067"
+    },
+    "docs/shinylive/style-resets.css": {
+      "checksum": "326179a3af08325314a9f92ef53b7b20"
+    },
+    "docs/shinylive/webr/esbuild.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/library.data": {
+      "checksum": "9ef547e9a57ab2012aa0b3e26eb01680"
+    },
+    "docs/shinylive/webr/library.js.metadata": {
+      "checksum": "dc4490addc99b4407c7c23876add8b77"
+    },
+    "docs/shinylive/webr/libRblas.so": {
+      "checksum": "95d021b4cd5f74a6abbee092a2de30bc"
+    },
+    "docs/shinylive/webr/libRlapack.so": {
+      "checksum": "2061ea193621976d961a0421ef431f56"
+    },
+    "docs/shinylive/webr/packages/magick/magick_2.8.5.data": {
+      "checksum": "e4435251d7abeaac3fa493908e0b93ff"
+    },
+    "docs/shinylive/webr/packages/magick/magick_2.8.5.js.metadata": {
+      "checksum": "03142415e51a26251a9235362f3d6f6c"
+    },
+    "docs/shinylive/webr/packages/purrr/purrr_1.0.2.data": {
+      "checksum": "b03564f23448ce1ba8f0cdf4e8eec112"
+    },
+    "docs/shinylive/webr/packages/purrr/purrr_1.0.2.js.metadata": {
+      "checksum": "2ae25c3e81f760a3da92f441afe6913b"
+    },
+    "docs/shinylive/webr/packages/stringr/stringr_1.5.1.data": {
+      "checksum": "3d6bc99f94ec56c71d42d9214d72b6d0"
+    },
+    "docs/shinylive/webr/packages/stringr/stringr_1.5.1.js.metadata": {
+      "checksum": "4cb3b9d41162e4b4db6ba993ab061c68"
+    },
+    "docs/shinylive/webr/R.bin.data": {
+      "checksum": "45dffc7c5bc7d6f9978481d498023dbb"
+    },
+    "docs/shinylive/webr/R.bin.js": {
+      "checksum": "3ea7d8d6bb73bf00865cba0727232b50"
+    },
+    "docs/shinylive/webr/R.bin.js.bak": {
+      "checksum": "7637a51a8e52339d4905e687e62cbeb3"
+    },
+    "docs/shinylive/webr/R.bin.wasm": {
+      "checksum": "e323e64439f7b1bc41a0fdf4a324b460"
+    },
+    "docs/shinylive/webr/repl/App.d.ts": {
+      "checksum": "6f52674a713dc1a91ec7ceb6661ae83f"
+    },
+    "docs/shinylive/webr/repl/components/Editor.d.ts": {
+      "checksum": "1600d80cccab2f3d43742373e9e605f3"
+    },
+    "docs/shinylive/webr/repl/components/Files.d.ts": {
+      "checksum": "85184877fbba6a5cf7cdeac40f2698b1"
+    },
+    "docs/shinylive/webr/repl/components/Plot.d.ts": {
+      "checksum": "132d88e78dac188518bfc3e9805e635d"
+    },
+    "docs/shinylive/webr/repl/components/Terminal.d.ts": {
+      "checksum": "1848af6209f7312499f43197fdaf5ac7"
+    },
+    "docs/shinylive/webr/repl/components/utils.d.ts": {
+      "checksum": "b9f9171cc64739ca15d789bbf6529271"
+    },
+    "docs/shinylive/webr/tests/packages/webr.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/chan/channel-postmessage.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/console.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/error.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/proxy.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/robj.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/utils.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-main.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-r.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-worker.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/vfs/etc/fonts/fonts.conf": {
+      "checksum": "6300427804c4677462c2b187d9e2d3d3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/doc.data": {
+      "checksum": "8eaae67dee239f8ea6dafd4e7cbb5456"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/doc.js.metadata": {
+      "checksum": "a560215a1807f822ae0208c52bc21e9d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/demo.data": {
+      "checksum": "b97fa10e3624a40ddc242cf1f90ca33e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/demo.js.metadata": {
+      "checksum": "fe59ac9830a37f3e4cbf46dfd544dfa7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/help.data": {
+      "checksum": "563e0756b8112288dd64d893640436a4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/help.js.metadata": {
+      "checksum": "81c9f3462a136f84fd32396e207f6a94"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/html.data": {
+      "checksum": "6d52b76482054ba0ff8adfe19ae96290"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/html.js.metadata": {
+      "checksum": "2747eeffc150113c3f8f35fcad45db9f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/help.data": {
+      "checksum": "0e1c3272fc58ccad392cfcac4a63ef2b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/help.js.metadata": {
+      "checksum": "b012d007656f430320cced26e7554f72"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/html.data": {
+      "checksum": "ef114b484ffd1e4ad82b42e535f04cde"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/html.js.metadata": {
+      "checksum": "95a6c6c9ee587fd7187539b01ea421e2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.data": {
+      "checksum": "4acc43a3194602c51ea78605a52d8078"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.js.metadata": {
+      "checksum": "3781d88991275b3dd34ce121eda11110"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/help.data": {
+      "checksum": "4a7844154a568e98ca3e17f576b6a35b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/help.js.metadata": {
+      "checksum": "e273e431354edc9acbfc576ae4ff58b3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/html.data": {
+      "checksum": "000828da64944d2b45e9f1e1720c2e3c"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/html.js.metadata": {
+      "checksum": "26e667ee18a839994c0816ce605423a6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.data": {
+      "checksum": "d008cd970f9bd1cb3846f80b20b21481"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.js.metadata": {
+      "checksum": "f6332c7e2f56012d47b2ef05251a03af"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/help.data": {
+      "checksum": "ac2fafa63933e8929a67f65087fa3f02"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/help.js.metadata": {
+      "checksum": "ac41297d3fafe87ce11def19a10b1227"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/html.data": {
+      "checksum": "9ee00b46d133610d6979acee0344d516"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/html.js.metadata": {
+      "checksum": "3a7f8f6002abecac71886ca09f35fccf"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.data": {
+      "checksum": "0841d42bd21179d4f875ea8c6b8a3cc8"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.js.metadata": {
+      "checksum": "7c593c7d5afa91670e5af89975b701ce"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.data": {
+      "checksum": "115c0b165ee413e82a3d0b3562c6b9f2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.js.metadata": {
+      "checksum": "f5df59543ddbdb38165abc0af959ee9e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.data": {
+      "checksum": "57a857d75331f892964876c14f214851"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.js.metadata": {
+      "checksum": "3b70263d2a461da0f6beee14ca10788f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.data": {
+      "checksum": "fa92dca6ba97a7bbe299a80374eae23a"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.js.metadata": {
+      "checksum": "32fc8ec23753b36a14cddda492ba08df"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.data": {
+      "checksum": "0a8702f77b46965a9e293329a236ca50"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.js.metadata": {
+      "checksum": "3a113143ccf876c2090d590fb9922e7e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.data": {
+      "checksum": "17e33414b90fd083b67303cd4ae26513"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.js.metadata": {
+      "checksum": "565a0591cb22fda7fff3e5cf98a2228a"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/libs/cairo.so": {
+      "checksum": "94f1c35a8e415f78c35d375162e2c8a4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.data": {
+      "checksum": "87efed9690b0fa37214d9d6dfffd12cf"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.js.metadata": {
+      "checksum": "42578be07c5fa442c3e8f3a7515ed9c2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/doc.data": {
+      "checksum": "a582352a66e194a08b357faeb29fd723"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/doc.js.metadata": {
+      "checksum": "39381515ecd83ded0a8346888154d58c"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/help.data": {
+      "checksum": "376c4b1755e1c0ffc659df6106f23d05"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/help.js.metadata": {
+      "checksum": "8cc2c0a366ab8af8fbb52ad36d8e1e7c"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/html.data": {
+      "checksum": "f7c633deb725c2e96ffa1fd7704a9bea"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/html.js.metadata": {
+      "checksum": "3a965cf41a6b096ff63a839841a44a57"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/tests.data": {
+      "checksum": "0e11d125ca8f1491be8b3ff0d48034a9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/tests.js.metadata": {
+      "checksum": "4202590d5ae1d22b8e751cb840ec2bfa"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/help.data": {
+      "checksum": "6925b03f7062a567de6ce15eb31a168e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/help.js.metadata": {
+      "checksum": "66d9b366e33bb0c310b228fc866ac83d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/html.data": {
+      "checksum": "ed71f903bb297cf200d3f035fc044e77"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/html.js.metadata": {
+      "checksum": "383ec9ea07f57bd92aba83076ebc7eb1"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/tests.data": {
+      "checksum": "db90ef46b40dec78dd7604150f400ff9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/tests.js.metadata": {
+      "checksum": "b5e158f0415edd3bbf664e2b4c966e7f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/parallel.data": {
+      "checksum": "ac4efaeff6d81f3766df9fc5b51a7199"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/parallel.js.metadata": {
+      "checksum": "aba885a0c3b71eda55ba5080f278534b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/help.data": {
+      "checksum": "62e417a885d34a5bac32a6597ec3906f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/help.js.metadata": {
+      "checksum": "96dd77a8464a0c58a2ad9936544c4abc"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/html.data": {
+      "checksum": "baa8c1bdbcf1abcfcab47e976da554b6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/html.js.metadata": {
+      "checksum": "36277e71756145d8a58eb555099570f7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/tests.data": {
+      "checksum": "2c970b50d6d05663c8297ed3db14e53d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/tests.js.metadata": {
+      "checksum": "a75dfeb75efac9b43410c98ef35303c2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/demo.data": {
+      "checksum": "184f3e0bcb74626d92780758a8947e82"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/demo.js.metadata": {
+      "checksum": "7346635402915c1f638dccc3f5a43361"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/help.data": {
+      "checksum": "45fb4468a15f829d4ad5d251b7b40043"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/help.js.metadata": {
+      "checksum": "add00d4f740a68e08c63e52b44cf3fc1"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/html.data": {
+      "checksum": "6426f485f53143ce5743f70f9e71cfa3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/html.js.metadata": {
+      "checksum": "b928e0f775a5f0aea2702ae68ad99032"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/tests.data": {
+      "checksum": "a04c4098c418857b1a427e18414d87e5"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/tests.js.metadata": {
+      "checksum": "f4773477e37af495d13758150a878d99"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/help.data": {
+      "checksum": "9a0f6e6ad9da5784c8966d1de5c0f245"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/help.js.metadata": {
+      "checksum": "1e556fb305e00a5d454c43f267c777fa"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/html.data": {
+      "checksum": "1f79e4d91169087dd4a87492532b29a8"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/html.js.metadata": {
+      "checksum": "2241053863a66820a293b7f73df4ebf5"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.data": {
+      "checksum": "d2606b2f293b232851e6daefc394391d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.js.metadata": {
+      "checksum": "fd4eeb673585d7386c54d1117793c688"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tcltk.data": {
+      "checksum": "c53368faaa5d89c412cfed05be0f9a0f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tcltk.js.metadata": {
+      "checksum": "c3cb07d2b2598212c0e35467460ab9f2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/help.data": {
+      "checksum": "73279dab08dd0937098e9da10dee2054"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/help.js.metadata": {
+      "checksum": "582591b623afb69f73992b3d8a7e71d8"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/html.data": {
+      "checksum": "14c30433c56769f038a53269db25b5eb"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/html.js.metadata": {
+      "checksum": "e69cb0f95d0a48686d5329d4355dbc65"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/tests.data": {
+      "checksum": "6ef7a08f4490ded9f03eef2b0332b4a3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/tests.js.metadata": {
+      "checksum": "9142cb4390b8d0873893892a9bdcf3f4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations.data": {
+      "checksum": "81c0325e28d8066e0ff928be53923227"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations.js.metadata": {
+      "checksum": "4e08ade88bf3566fcde017afd3d2ba46"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations/DESCRIPTION": {
+      "checksum": "8c74fc51c182b93b45d7c801202cb889"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/doc.data": {
+      "checksum": "93caed4bdeecddae7bf80250e60d1768"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/doc.js.metadata": {
+      "checksum": "b60e4a241210b3309e2cdfae27a641fd"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/help.data": {
+      "checksum": "a6f6e2c60c9d6175a96ab46e606834b3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/help.js.metadata": {
+      "checksum": "9af0869d3c1b7b2332fd67201ef0946b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/html.data": {
+      "checksum": "c55eafd96765e70082e7a9b2d86f0b3b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/html.js.metadata": {
+      "checksum": "461076de2ae71666aa84ae2e69b94960"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/misc.data": {
+      "checksum": "dc1fdc8566529881bf55d3e88fac4b6f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/misc.js.metadata": {
+      "checksum": "612cba7ef6f134d6e2ee8dd823227f0d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/tests.data": {
+      "checksum": "2ba4f796d43052aadcfecfd796d3b5a4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/tests.js.metadata": {
+      "checksum": "c06544a021f229d4b18e4c7a27c3150a"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/webr/help.data": {
+      "checksum": "8e2d22f405162138d7104b8d8be65ffd"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/webr/help.js.metadata": {
+      "checksum": "f67e89c8235ef6b573ccbab62a1a5fff"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/webr/html.data": {
+      "checksum": "7aa2c57b2a9a04c25354fd7b097a839b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/webr/html.js.metadata": {
+      "checksum": "0bda4be9e3d94b4705c219d8a08bf689"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/share.data": {
+      "checksum": "a425260fa612fb822d312ffd91a7bff6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/share.js.metadata": {
+      "checksum": "d5d7a98791166b7a3775bb15dcc7310d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/tests.data": {
+      "checksum": "224eca41271df73fc8f60cea1d5e63e7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/tests.js.metadata": {
+      "checksum": "47130a52df1f3625d193eea09c2ca774"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Bold.ttf": {
+      "checksum": "5959e861b45905afb3f5659b66e5a43b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-BoldItalic.ttf": {
+      "checksum": "258746b7854392bcfd5531c3110674a1"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Italic.ttf": {
+      "checksum": "b650143d06ff517e7482b6cbecb057b7"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Regular.ttf": {
+      "checksum": "556ad26a9ff8afce0ea47896b298f4bf"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Bold.ttf": {
+      "checksum": "e03f7c60925be06f6037ab22ceef6534"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Regular.ttf": {
+      "checksum": "76bc9dee5de9d62cf1fff05a85b6d463"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Bold.ttf": {
+      "checksum": "ffdf273d3e86678a428bfe16de5793e5"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-BoldItalic.ttf": {
+      "checksum": "0036797788d93b0f0cae86eec0040b1b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Italic.ttf": {
+      "checksum": "4c488bfae3b56f7f85ddd8af6829accc"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Regular.ttf": {
+      "checksum": "788141e28255aec7da6d1f5444ddad4c"
+    },
+    "docs/shinylive/webr/vfs/usr/share/gdal.data": {
+      "checksum": "906b74139c643ee2ff39fe126d64225e"
+    },
+    "docs/shinylive/webr/vfs/usr/share/gdal.js.metadata": {
+      "checksum": "eb1cd6615f4c7bc6928bcbe9907dec7a"
+    },
+    "docs/shinylive/webr/vfs/usr/share/proj.data": {
+      "checksum": "2762d2e08555b4919b5cca654059f4a6"
+    },
+    "docs/shinylive/webr/vfs/usr/share/proj.js.metadata": {
+      "checksum": "45886af888cc96465a046ae01862e36b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/udunits.data": {
+      "checksum": "5c9adc002682bd8219115e47205abdc9"
+    },
+    "docs/shinylive/webr/vfs/usr/share/udunits.js.metadata": {
+      "checksum": "1a5c14ca2d82ff8d174b641261079e23"
+    },
+    "docs/shinylive/webr/vfs/var/cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le32d8.cache-7": {
+      "checksum": "9c76b2216dc8e1f9e9a52ce8e15e2383"
+    },
+    "docs/shinylive/webr/vfs/var/cache/fontconfig/CACHEDIR.TAG": {
+      "checksum": "edad2301cde055e29b0d30b8d2f4b724"
+    },
+    "docs/shinylive/webr/webr-serviceworker.js": {
+      "checksum": "6876da0f1da4919269b12939fbf31674"
+    },
+    "docs/shinylive/webr/webr-serviceworker.js.map": {
+      "checksum": "2a14bb1f0c9d4050af473b1f638c540e"
+    },
+    "docs/shinylive/webr/webr-serviceworker.mjs": {
+      "checksum": "6353b631c6f6b280eca93a4f41bd4d80"
+    },
+    "docs/shinylive/webr/webr-serviceworker.mjs.map": {
+      "checksum": "771702683d95a98c01cee7f1a16d1492"
+    },
+    "docs/shinylive/webr/webr-worker.js": {
+      "checksum": "ac40ea446060d3c53a433ef6562c8d37"
+    },
+    "docs/shinylive/webr/webr-worker.js.map": {
+      "checksum": "2bf7a0494df29e9b78e4d6b6a91782e3"
+    },
+    "docs/shinylive/webr/webr.cjs": {
+      "checksum": "c87498b68505804b1d9411137d75876f"
+    },
+    "docs/shinylive/webr/webr.cjs.map": {
+      "checksum": "51b22745df48655bd567bc8ade7a0750"
+    },
+    "docs/shinylive/webr/webr.mjs": {
+      "checksum": "0b3ffa80ea592b2162bcae8c67890099"
+    },
+    "docs/shinylive/webr/webr.mjs.map": {
+      "checksum": "83af22c7e53119c914b164b349c3ddea"
+    },
+    "docs/shinylive/webr/webR/chan/channel-common.d.ts": {
+      "checksum": "fec049491a432f1ccbf3ce024bba3baa"
+    },
+    "docs/shinylive/webr/webR/chan/channel-postmessage.d.ts": {
+      "checksum": "b0ee2ba6efe10710dc7061b467b37bf8"
+    },
+    "docs/shinylive/webr/webR/chan/channel-service.d.ts": {
+      "checksum": "6e7e5f5796d610ea1bb783c1acfa388d"
+    },
+    "docs/shinylive/webr/webR/chan/channel-shared.d.ts": {
+      "checksum": "b8238297c56343a6f1703187c16db0b0"
+    },
+    "docs/shinylive/webr/webR/chan/channel.d.ts": {
+      "checksum": "ae565b837db4ae87ba2152b9d961eb22"
+    },
+    "docs/shinylive/webr/webR/chan/message.d.ts": {
+      "checksum": "7705b5d065fc7c9ec24c5906bcb3e1e9"
+    },
+    "docs/shinylive/webr/webR/chan/queue.d.ts": {
+      "checksum": "88820d2b2237896b22d15da0bb8246ea"
+    },
+    "docs/shinylive/webr/webR/chan/serviceworker.d.ts": {
+      "checksum": "6d929e5cd8ad392cfa10734d88c25d67"
+    },
+    "docs/shinylive/webr/webR/chan/task-common.d.ts": {
+      "checksum": "5bec41a29d2b750b509fcc4f8a1ed1e0"
+    },
+    "docs/shinylive/webr/webR/chan/task-main.d.ts": {
+      "checksum": "f6f605da203f29469a5b4d38b2c0bcce"
+    },
+    "docs/shinylive/webr/webR/chan/task-worker.d.ts": {
+      "checksum": "cf6b12ffd3797cb9303bbd190351eb4b"
+    },
+    "docs/shinylive/webr/webR/compat.d.ts": {
+      "checksum": "33eda8bd4455ab1b10c7e580db558f45"
+    },
+    "docs/shinylive/webr/webR/config.d.ts": {
+      "checksum": "f32320cdf2c63f1f2a19a2d090dbdcee"
+    },
+    "docs/shinylive/webr/webR/console.d.ts": {
+      "checksum": "591c23a125e11dcf3dd2e959cfdc06b9"
+    },
+    "docs/shinylive/webr/webR/emscripten.d.ts": {
+      "checksum": "e8842af4b6216e7077ad58bbb207bef9"
+    },
+    "docs/shinylive/webr/webR/error.d.ts": {
+      "checksum": "f6ab6e58de6eb63a7d7b16aaa48be714"
+    },
+    "docs/shinylive/webr/webR/payload.d.ts": {
+      "checksum": "eb9cd4d5c9df6f2a1a9b20e70e06aa35"
+    },
+    "docs/shinylive/webr/webR/proxy.d.ts": {
+      "checksum": "60050c04a4a7bef595d0b8fe6477ca36"
+    },
+    "docs/shinylive/webr/webR/robj-main.d.ts": {
+      "checksum": "d01b9ab014e5b5d44f1b52bf6ab177e0"
+    },
+    "docs/shinylive/webr/webR/robj-worker.d.ts": {
+      "checksum": "6df4a4fa57fa272f661e797033c6f458"
+    },
+    "docs/shinylive/webr/webR/robj.d.ts": {
+      "checksum": "36b1c032d91beb66132e8e21fc21865c"
+    },
+    "docs/shinylive/webr/webR/utils-r.d.ts": {
+      "checksum": "8dd57576c21644349c45e562ce9f1f4a"
+    },
+    "docs/shinylive/webr/webR/utils.d.ts": {
+      "checksum": "261bb1e9718c734a460306deb79329b9"
+    },
+    "docs/shinylive/webr/webR/webr-chan.d.ts": {
+      "checksum": "683480399ea03890693829db6ee60495"
+    },
+    "docs/shinylive/webr/webR/webr-main.d.ts": {
+      "checksum": "8ec51e4475f62a07a1557331187ea82e"
+    },
+    "docs/shinylive/webr/webR/webr-worker.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
     },
     "LICENSE.md": {
       "checksum": "fa589c36105a2a22665a710b2003526c"
     },
     "R/build.R": {
-      "checksum": "202f5818b955c0bb65b323198c4156f5"
+      "checksum": "76e86a0af2a94bee8819a26257fe325b"
     },
     "README.html": {
       "checksum": "c4364bfd02966044cb585c1237d9760e"
@@ -1142,1307 +1716,1307 @@
     "README.md": {
       "checksum": "6fa3d62d28c5fccbb7d36fee2a7a3e7f"
     },
-    "www/img/bodies_1x1.png": {
-      "checksum": "e480b23ff3b950614e2d6bdce28e5c0c"
+    "www/img/body_1x1.png": {
+      "checksum": "36dadd1032a7ff293bc997d8a7445dec"
     },
-    "www/img/bodies_1x2.png": {
-      "checksum": "8baf4ddeb3ccb482ed917978470d0690"
+    "www/img/body_1x2.png": {
+      "checksum": "4832f748677516677f04b10586773043"
     },
-    "www/img/bodies_1x3.png": {
-      "checksum": "dbf3d0dcc470c8d319bc5ebd9c1c03f2"
+    "www/img/body_1x3.png": {
+      "checksum": "852a2540a0435fdf5d523eeacef40f1c"
     },
-    "www/img/bodies_1x4.png": {
-      "checksum": "816cc5b42fd77c7fa2a80207bafd12c8"
+    "www/img/body_1x4.png": {
+      "checksum": "362e2b47b938e4e538a759867288776d"
     },
-    "www/img/bodies_2x1.png": {
-      "checksum": "891e91b2e8b6a41c52163198a7fb9011"
+    "www/img/body_2x1.png": {
+      "checksum": "2139a5470a8a35aa36c65fe4905e9e3e"
     },
-    "www/img/bodies_2x2.png": {
-      "checksum": "e189923c55942819b34a37d3eb9da407"
+    "www/img/body_2x2.png": {
+      "checksum": "8e29eb0da3e1e755c8bf2957e6ce2383"
     },
-    "www/img/bodies_2x3.png": {
-      "checksum": "a23ee41e7711c84604fa2a99330d4ea8"
+    "www/img/body_2x3.png": {
+      "checksum": "882cee51338fdd35ea581e984ff51c04"
     },
-    "www/img/bodies_2x4.png": {
-      "checksum": "8485884c873803840cae170be5f58f0f"
+    "www/img/body_2x4.png": {
+      "checksum": "88527b9cc9968e8f83e82cb5ef371c02"
     },
     "www/img/hair_20x1.png": {
-      "checksum": "ccc84510bed42946231087b1a2007d97"
+      "checksum": "a3c2285befe81eebeaa4ba2684870a0d"
     },
     "www/img/hair_20x10.png": {
-      "checksum": "849c5763ecf1367410b30e04f46e7790"
+      "checksum": "3e5ee9a488df6d3c7ed4e95d5c55cf03"
     },
     "www/img/hair_20x11.png": {
-      "checksum": "20262bda8c565c5cf4b77656e084dacd"
+      "checksum": "5344d10a27ef5c22fc9e10024f8072c0"
     },
     "www/img/hair_20x12.png": {
-      "checksum": "86c12859c735d748e848f0d773d829b6"
+      "checksum": "a5cedb6f72f9ebacf40a36c1306f1d5d"
     },
     "www/img/hair_20x2.png": {
-      "checksum": "57874112495de79628414e1a571bd958"
+      "checksum": "4a17fbb2d369c50872f6558cc954f3de"
     },
     "www/img/hair_20x3.png": {
-      "checksum": "722737a625cb1d3f5d257573fbce102e"
+      "checksum": "b08115812c483a02644e3c37212792d0"
     },
     "www/img/hair_20x4.png": {
-      "checksum": "1ec2cf57deca108fd2867d1927f2f89d"
+      "checksum": "3a3efeb18517f5641b85e1bfa8c899a8"
     },
     "www/img/hair_20x5.png": {
-      "checksum": "24bc28ef4b32ceb97345ca19e269461e"
+      "checksum": "63907de93e3c9ede4f936da62d8a4964"
     },
     "www/img/hair_20x6.png": {
-      "checksum": "d653754ea0adebede109ba270c8a175d"
+      "checksum": "0db2c55ad350fb048e40b19f4cc7cbc0"
     },
     "www/img/hair_20x7.png": {
-      "checksum": "d6503df569ad3e33101f03f38422aa58"
+      "checksum": "a53279891795a961f877d460cedbf6ab"
     },
     "www/img/hair_20x8.png": {
-      "checksum": "f57a7ccfe8e700448929fa6d48a0ca69"
+      "checksum": "76b4b6e61c75e26d93f9e3646e9d08d6"
     },
     "www/img/hair_20x9.png": {
-      "checksum": "98120c8ba8f402c750167452d5f6097c"
+      "checksum": "8db520d6bdd921e86d046b78bacc7447"
     },
     "www/img/hair_21x1.png": {
-      "checksum": "1d4a864a389213c7434e18d28fea9f14"
+      "checksum": "67ea90167216c834223a5ed2a4c3b46e"
     },
     "www/img/hair_21x10.png": {
-      "checksum": "3782a3ce0510dab34aa3a07bded8f397"
+      "checksum": "96aa3cf4673a5f53590923a3217f63a9"
     },
     "www/img/hair_21x11.png": {
-      "checksum": "089c988778fac8c5cd935ffa3b0abf68"
+      "checksum": "6323a56ffeebb593613a595f4f7e5d4d"
     },
     "www/img/hair_21x12.png": {
-      "checksum": "17b288fd7a12283bc87c75290059fad2"
+      "checksum": "bafce63de1ece72efecd2572a4276fba"
     },
     "www/img/hair_21x2.png": {
-      "checksum": "1f5e4eddba46b1b75ab1bac9154b0ff3"
+      "checksum": "ad2ed75f78206d37ad571aa1c353c3df"
     },
     "www/img/hair_21x3.png": {
-      "checksum": "d70537a4d736472bed736ea49e1b7889"
+      "checksum": "692dce3a5f2b7a25bba4748cbad5c242"
     },
     "www/img/hair_21x4.png": {
-      "checksum": "4050d55bc229f5a8711382f4a0a1ec4a"
+      "checksum": "e2807936b7091c9a3df3c613dab6ae9d"
     },
     "www/img/hair_21x5.png": {
-      "checksum": "58798637c12a3befbd15c58aea18514b"
+      "checksum": "59ce594dd0ad5f49b70b58be1fb4f6be"
     },
     "www/img/hair_21x6.png": {
-      "checksum": "de50c8f606d1ddf01594c57b7b249cf1"
+      "checksum": "73e697fcc2a5fbb3c5da5ed935cded31"
     },
     "www/img/hair_21x7.png": {
-      "checksum": "80ce6876ec12c3720d9883f37d696c2e"
+      "checksum": "4795f6551d9221057bf303924435c0ff"
     },
     "www/img/hair_21x8.png": {
-      "checksum": "558a1dd3aa43760e11496cc873e7cb10"
+      "checksum": "dbb8201084f2399517cc01225e64b3e0"
     },
     "www/img/hair_21x9.png": {
-      "checksum": "38c61165beaf82bf55ebd15a427749b4"
+      "checksum": "e4db642c9f8f92353608ae71ac200def"
     },
     "www/img/hair_22x1.png": {
-      "checksum": "8c76ba525384c4a81f62d3dbeafb6a05"
+      "checksum": "f4946669798e20f839b103d63a6ba823"
     },
     "www/img/hair_22x10.png": {
-      "checksum": "4a359f88f746141d0fecea6c696f0e24"
+      "checksum": "1a2d51ccba30a4258c4c9ffbcfa027ee"
     },
     "www/img/hair_22x11.png": {
-      "checksum": "70e2ad7721a613b608e38ab4dd2fa4c4"
+      "checksum": "a7d3799dea74ad3d2de599c00e015579"
     },
     "www/img/hair_22x12.png": {
-      "checksum": "7c70548fec95f3d790ce5195bb7dc51a"
+      "checksum": "eea17d2109c2a2e5ce643792a429ac12"
     },
     "www/img/hair_22x2.png": {
-      "checksum": "890aacf8beb1fbdf83290769ed7325aa"
+      "checksum": "6ea44e378c7504a10b9077b26bac8da5"
     },
     "www/img/hair_22x3.png": {
-      "checksum": "38fcae1cd6be42b1796b71fea8e4de0f"
+      "checksum": "8fd7ac9c859dd4dbb19afa1c0ef73769"
     },
     "www/img/hair_22x4.png": {
-      "checksum": "23113910017b572bdda4cceea47e18cb"
+      "checksum": "aff6cbc5e7d0b4ce3fb00b00a7a40a3b"
     },
     "www/img/hair_22x5.png": {
-      "checksum": "a053149a6ea864066f88d29111cf01ae"
+      "checksum": "d8c5375e5f781cdd8383915d94db66a2"
     },
     "www/img/hair_22x6.png": {
-      "checksum": "bb9d32f0f8334d778697bdd114c189ae"
+      "checksum": "7fe6bb7435552488f1968786dea886dc"
     },
     "www/img/hair_22x7.png": {
-      "checksum": "ec860b361dd83b771279a47edb98e0c8"
+      "checksum": "112bd3ed3164538ed6f10b693a3e46b7"
     },
     "www/img/hair_22x8.png": {
-      "checksum": "a0ba5ec1b93049bcf019d01769e8e06c"
+      "checksum": "c322a4825c92e9aabb50ff5c134f6bae"
     },
     "www/img/hair_22x9.png": {
-      "checksum": "54ce0a6097f9ddead2bf1a46e5e44f5a"
+      "checksum": "11412f1b0b50222d983219e4b4f8da82"
     },
     "www/img/hair_23x1.png": {
-      "checksum": "610d2eb59ac1a22c19d8d8c82856311f"
+      "checksum": "3607d5f7ae291c9d5c2b2d85a8d721d6"
     },
     "www/img/hair_23x10.png": {
-      "checksum": "50488cbe2c3cf3fcdf41a3a6a202f6f3"
+      "checksum": "afaf78b4a1ec286a6415ec0737157ab1"
     },
     "www/img/hair_23x11.png": {
-      "checksum": "30b9c05564dc66138ba8d1fbe8f53c82"
+      "checksum": "592b198e5a8617da716cafa105723eec"
     },
     "www/img/hair_23x12.png": {
-      "checksum": "d0468928e12abe3c697aa6be055cd397"
+      "checksum": "208a9a6c7af4192463b609a042259fe6"
     },
     "www/img/hair_23x2.png": {
-      "checksum": "81f3532a1bace948af968522f38e7ed7"
+      "checksum": "f5e55229977ecad0d18fee76ca1ff2a0"
     },
     "www/img/hair_23x3.png": {
-      "checksum": "0f75f361ac81f2dfe30771a26bfb7f19"
+      "checksum": "2986b353fa2ab949badd07539926f84c"
     },
     "www/img/hair_23x4.png": {
-      "checksum": "9d7b69f39cc778baf4c2aa9ddca37984"
+      "checksum": "19f1db4909ad627d130c55a8a7fdc4da"
     },
     "www/img/hair_23x5.png": {
-      "checksum": "8036c3c3f200a66ce59f587f64ba6818"
+      "checksum": "1855667fd22befaea07aefd0436f9149"
     },
     "www/img/hair_23x6.png": {
-      "checksum": "6180e8403bbde6fe08d7fa62646a45cd"
+      "checksum": "779a03e1cdfca7769665de6cca207da5"
     },
     "www/img/hair_23x7.png": {
-      "checksum": "0c9f6eeeb9f5448c708edb20389cd09b"
+      "checksum": "996170b44e6cc4f46e2048d7baede594"
     },
     "www/img/hair_23x8.png": {
-      "checksum": "3af672d167f3225a8b211455f1577329"
+      "checksum": "ee868d48621ecabafa9514ba3a6d30bc"
     },
     "www/img/hair_23x9.png": {
-      "checksum": "4eba7ff718a274061db0bc0f99f3c1f4"
+      "checksum": "0ca2da9b8e29cedcc60c02f48b29dd4a"
     },
     "www/img/hair_24x1.png": {
-      "checksum": "7cc0d3a14a570a12b40ea57785134d43"
+      "checksum": "a6ce181fd50014c6c0aaae0f73de7738"
     },
     "www/img/hair_24x2.png": {
-      "checksum": "3b13ce0f3784eaeaabd2c0aef50a5c75"
+      "checksum": "1fec022a52212997d25fe96411d38456"
     },
     "www/img/hair_24x3.png": {
-      "checksum": "4fe3bcd7e7fda30c0a026527271640f3"
+      "checksum": "b0da9bfd3185949a06b60eb8eb91e68e"
     },
     "www/img/hair_24x4.png": {
-      "checksum": "6e8c10e42e61b1564e7de9db6f4971eb"
+      "checksum": "dc15f0a5bfc2a80616e67a3f68fbcc51"
     },
     "www/img/hair_24x5.png": {
-      "checksum": "b1605aae5154d78bb1aa8a29f411c3ac"
+      "checksum": "04058c9249b1bdeb8beef43e568de1df"
     },
     "www/img/hair_24x6.png": {
-      "checksum": "6fe49d2fe1dd263937ee1c942a7d2586"
+      "checksum": "7080e334b8d679de388d04f9645a9dc0"
     },
     "www/img/hair_24x7.png": {
-      "checksum": "209f76fcbcf22d1e8a16792ed4a2d8b9"
+      "checksum": "7cf03f88bd85244ab5072549e18a026a"
     },
     "www/img/hair_24x8.png": {
-      "checksum": "6a515820dff877ef157c61dcb0333746"
+      "checksum": "74246078ffb961fb114d0187243f3b92"
     },
     "www/img/hair_25x1.png": {
-      "checksum": "5553f1319f2e70afb1ed76db200f653c"
+      "checksum": "da56777f07714350d99b9f083cd9de1a"
     },
     "www/img/hair_25x2.png": {
-      "checksum": "9223fb8b987c7eca5a52decd6672562c"
+      "checksum": "4451205e9f0444874f072a5fdf785fd6"
     },
     "www/img/hair_25x3.png": {
-      "checksum": "8b64872a087d9f22d46164dc6586aee5"
+      "checksum": "1cc9c32ba42e30fe8271be9ddeefb2b8"
     },
     "www/img/hair_25x4.png": {
-      "checksum": "6f1f16e77584d2855019c0a9777d7e8e"
+      "checksum": "a304a8f62f6e48c4de1bc64b7b9ffb34"
     },
     "www/img/hair_25x5.png": {
-      "checksum": "688732a4b15bc57b0ec7649ff82bd3ff"
+      "checksum": "02c165f627a0dc328197a49e2a27920a"
     },
     "www/img/hair_25x6.png": {
-      "checksum": "0a43c051b40de51895352e5946f5c546"
+      "checksum": "8347be8591eec3ed7a9b8b3d61824ac5"
     },
     "www/img/hair_25x7.png": {
-      "checksum": "df0b4644139ddc4268a18639a42d1cc8"
+      "checksum": "902f6a9b4bd896f07d33f5b5d1fc0005"
     },
     "www/img/hair_25x8.png": {
-      "checksum": "29a99d2b9b581621a9176b7d8c98c7f0"
+      "checksum": "6596f45abdb53412d96c0ff74c70f8d7"
     },
     "www/img/hair_26x1.png": {
-      "checksum": "5d69bd76bae626cd75aa98d73dab2be5"
+      "checksum": "3080894d4ca38bbf5340371166b39c97"
     },
     "www/img/hair_26x2.png": {
-      "checksum": "f9828be2f4c079d6e3df566f3980948e"
+      "checksum": "de65921b04af8d4a0a4f0f37168bb20e"
     },
     "www/img/hair_26x3.png": {
-      "checksum": "b3efbc4698dfa6bee2d31af000986157"
+      "checksum": "38f130968ebb17474522acd995026385"
     },
     "www/img/hair_26x4.png": {
-      "checksum": "ec28ac6d0bdbb8b9c444d425586d7a8a"
+      "checksum": "708c21f7eb4bdb065e475cd6a6d51b0f"
     },
     "www/img/hair_26x5.png": {
-      "checksum": "77fd368557307c0b55f079f753d746da"
+      "checksum": "5ea11b8f7ade25452ba202cbd3f948ab"
     },
     "www/img/hair_26x6.png": {
-      "checksum": "5e782e44e74f739706df82cc1552b91c"
+      "checksum": "7e69fefc41428f84e4c83b0334c727fb"
     },
     "www/img/hair_26x7.png": {
-      "checksum": "79dfd1b84132d7d853ea39cd5702bfe3"
+      "checksum": "944ccd5772d4a337a15845e51f6312fc"
     },
     "www/img/hair_26x8.png": {
-      "checksum": "534cabfe3ad686572496d602101c56a7"
+      "checksum": "2f3276b9da25d8300daaf21639fe90f0"
     },
     "www/img/hair_27x1.png": {
-      "checksum": "6cedb8ac94919ece5a7fcd8acf5490d4"
+      "checksum": "37fd354bb29594654dc437b1dfb5ef0c"
     },
     "www/img/hair_27x2.png": {
-      "checksum": "a9d1352e9877ef3c83ed32d971854b39"
+      "checksum": "0ffe4d617eca405b0addacb3fe1e69b0"
     },
     "www/img/hair_27x3.png": {
-      "checksum": "f2530e027c2bb933bbddab82576da9e7"
+      "checksum": "217c81959110e9519389d1c74c36cbd4"
     },
     "www/img/hair_27x4.png": {
-      "checksum": "6f46c7619a56397d652f9c1379189193"
+      "checksum": "47fcf6115a505529e2aa91c8f1f97030"
     },
     "www/img/hair_27x5.png": {
-      "checksum": "136e71182b62050fd6a356be8f45051d"
+      "checksum": "80698c828ec38371c4a425acc4c4b0cc"
     },
     "www/img/hair_27x6.png": {
-      "checksum": "11c2e38daeb5b96d62005340c94c265f"
+      "checksum": "43dbb3b1039fe1f0e40b2a21bfa6ab41"
     },
     "www/img/hair_27x7.png": {
-      "checksum": "5bf4e656c10573d93ead472ba8a2a2ec"
+      "checksum": "2a1fce1301df200715284f4abc4864b2"
     },
     "www/img/hair_27x8.png": {
-      "checksum": "f74256b11ed9524ac61d26c7aeb36094"
+      "checksum": "1f0afb0210443bae947349835f9f57d9"
     },
-    "www/img/hats_29x1.png": {
-      "checksum": "fedd48938f9eb00d99bf4aa3e018e0e5"
+    "www/img/hat_29x1.png": {
+      "checksum": "da3e5d5f42790e68631a09fea0463e95"
     },
-    "www/img/hats_29x2.png": {
-      "checksum": "14a576cb888a3835e6d0586e61a8420c"
+    "www/img/hat_29x2.png": {
+      "checksum": "9b8e4e5ff6801ef0fdfbfd380718c1fb"
     },
-    "www/img/hats_29x3.png": {
-      "checksum": "31fe9c56431a8ffabd9fee3ffed0e496"
+    "www/img/hat_29x3.png": {
+      "checksum": "01aa1575f4ef90ddb749455e23bb3203"
     },
-    "www/img/hats_29x4.png": {
-      "checksum": "58100b22023b58238bf768494f96c2b5"
+    "www/img/hat_29x4.png": {
+      "checksum": "b5d27f52943fe1bdb15f51341efa7a0b"
     },
-    "www/img/hats_29x5.png": {
-      "checksum": "d443573588565d360433f8ceaf7afa86"
+    "www/img/hat_29x5.png": {
+      "checksum": "8ec0d8d329773fed3bf345b26d8f33c1"
     },
-    "www/img/hats_29x6.png": {
-      "checksum": "57e2ae6eea8b6046d5bd04862a22982b"
+    "www/img/hat_29x6.png": {
+      "checksum": "b6fc002e78982a79810131c264621f84"
     },
-    "www/img/hats_29x7.png": {
-      "checksum": "ff690afc3d535ac0d84b6cd437b40084"
+    "www/img/hat_29x7.png": {
+      "checksum": "1ea80c72c0f84ca598ba764f2d11e2cf"
     },
-    "www/img/hats_29x8.png": {
-      "checksum": "cf041ebb5ef0fd1aa30bc4c4c095f488"
+    "www/img/hat_29x8.png": {
+      "checksum": "1ed32f9c842cd224a61aba9d9748072a"
     },
-    "www/img/hats_29x9.png": {
-      "checksum": "e090b63d8e841ef8a139ae982ec2fd43"
+    "www/img/hat_29x9.png": {
+      "checksum": "1be0bd82288b4209a6b1d4294fe042d2"
     },
-    "www/img/hats_30x1.png": {
-      "checksum": "b2376ac83c72990cc358c6292b5a61fe"
+    "www/img/hat_30x1.png": {
+      "checksum": "3f8a3a12a70374430e2ab68d25724027"
     },
-    "www/img/hats_30x2.png": {
-      "checksum": "a71eca2b2896be8e49211543c64ee7f4"
+    "www/img/hat_30x2.png": {
+      "checksum": "aefaf0c015d376dd049b688374320530"
     },
-    "www/img/hats_30x3.png": {
-      "checksum": "6f9bf87b933ba4091579d22237c6a818"
+    "www/img/hat_30x3.png": {
+      "checksum": "a8276f2b5504d3073ec13a90ca20a023"
     },
-    "www/img/hats_30x4.png": {
-      "checksum": "07d3e1eaba63e69a1dac74f7d23be29d"
+    "www/img/hat_30x4.png": {
+      "checksum": "eed0becd5a88f861a4b54ab28f3e3686"
     },
-    "www/img/hats_30x5.png": {
-      "checksum": "e1274acca72392bd7ee1967e6dfb8f2d"
+    "www/img/hat_30x5.png": {
+      "checksum": "a70eebd0299090f4bd57b2ce82aab8cc"
     },
-    "www/img/hats_30x6.png": {
-      "checksum": "2445d398de780bc67a63a1868ae88c5f"
+    "www/img/hat_30x6.png": {
+      "checksum": "86390893ad3722385fd0646da30741fc"
     },
-    "www/img/hats_30x7.png": {
-      "checksum": "ac8e989fbe21ee2af9576dca56d57435"
+    "www/img/hat_30x7.png": {
+      "checksum": "459af032df30b8d946097c496f4d58e9"
     },
-    "www/img/hats_30x8.png": {
-      "checksum": "febfc6e1f38f4fe0ab5aeff3e2b51be5"
+    "www/img/hat_30x8.png": {
+      "checksum": "0d24fc0142e1f9b76adb7471a5e17025"
     },
-    "www/img/hats_30x9.png": {
-      "checksum": "be560c8b0a56d7f13391d18877974510"
+    "www/img/hat_30x9.png": {
+      "checksum": "99a67df80265cb3d32789d24d164c422"
     },
-    "www/img/hats_31x1.png": {
-      "checksum": "c68037d355a3420179a0fbed7ceed924"
+    "www/img/hat_31x1.png": {
+      "checksum": "4c78f13fb0304ef3d37d83fd0a917aca"
     },
-    "www/img/hats_31x2.png": {
-      "checksum": "240daf35b41ac763760ffbeb8cf84c65"
+    "www/img/hat_31x2.png": {
+      "checksum": "59f2ea7162ee3617fb66fceee580260b"
     },
-    "www/img/hats_31x3.png": {
-      "checksum": "d0f77e26fa2b524cabdb9faf77402332"
+    "www/img/hat_31x3.png": {
+      "checksum": "373e8d4d84bacd53e9e68f65a1c5d3c4"
     },
-    "www/img/hats_31x4.png": {
-      "checksum": "e789675f0db0d863bb5ceba682d0fa2b"
+    "www/img/hat_31x4.png": {
+      "checksum": "0be3b480118769546acd68683e1e9077"
     },
-    "www/img/hats_31x5.png": {
-      "checksum": "768d12f74c00146f0f8b3bbc68e32454"
+    "www/img/hat_31x5.png": {
+      "checksum": "e095f957cac025d223ca45201c49917e"
     },
-    "www/img/hats_31x6.png": {
-      "checksum": "ca9d1a18bc4ebb97ccb0f178816c80bf"
+    "www/img/hat_31x6.png": {
+      "checksum": "2671ad3dff6643c21d9a3dee9e73502f"
     },
-    "www/img/hats_31x7.png": {
-      "checksum": "b53da9d601a239e97b08d18325bc2917"
+    "www/img/hat_31x7.png": {
+      "checksum": "b545aefe97b9a1a5ade0ad6a51c5813d"
     },
-    "www/img/hats_31x8.png": {
-      "checksum": "0875ec96cc7a79a02167f6cbd661d4fd"
+    "www/img/hat_31x8.png": {
+      "checksum": "e2b4882f259c23fc80acebb7f252f264"
     },
-    "www/img/hats_31x9.png": {
-      "checksum": "f02272b3fe56e0d7066607aa4ae875c5"
+    "www/img/hat_31x9.png": {
+      "checksum": "9e66ddfaffcaaae175330fd66747ba85"
     },
-    "www/img/hats_32x1.png": {
-      "checksum": "2f80c8e463446533b623d64475c621df"
+    "www/img/hat_32x1.png": {
+      "checksum": "fd683dddf25f4035c95cb9310162b57a"
     },
-    "www/img/hats_32x2.png": {
-      "checksum": "4833b90d241efe74d470422e20e70a3c"
+    "www/img/hat_32x2.png": {
+      "checksum": "af091fc7a3fce9ee07eca2c1a317cfd6"
     },
-    "www/img/hats_32x3.png": {
-      "checksum": "77580166e58896622b2bd4e4af03acda"
+    "www/img/hat_32x3.png": {
+      "checksum": "296511f29ed894e69aea4a5a32c8d92c"
     },
-    "www/img/hats_32x4.png": {
-      "checksum": "921b1311a6787ad9fb10160eb2aa2bea"
+    "www/img/hat_32x4.png": {
+      "checksum": "d6f1b8d08f7838b6e6f88d4f2b31e53d"
     },
-    "www/img/hats_32x5.png": {
-      "checksum": "b232276c6232e1c4e2e2d8b49bd5ac5b"
+    "www/img/hat_32x5.png": {
+      "checksum": "54adeb23d6b3dcd547982ea7f5e71348"
     },
-    "www/img/hats_32x6.png": {
-      "checksum": "e4deb8a928f12ef1c98629976c2c0dd9"
+    "www/img/hat_32x6.png": {
+      "checksum": "5f82056edd85f69d7c0f7494d72a5bbb"
     },
-    "www/img/hats_32x7.png": {
-      "checksum": "f930d65eb1e3b37c0d9fa9aead8b5723"
+    "www/img/hat_32x7.png": {
+      "checksum": "e9182215b19d55c7ded269e7ed3ed43e"
     },
-    "www/img/hats_32x8.png": {
-      "checksum": "91b831fcd79c0c45607f2be65a7974f0"
+    "www/img/hat_32x8.png": {
+      "checksum": "425111b6083ec398a0ffab115e948daf"
     },
-    "www/img/hats_32x9.png": {
-      "checksum": "f2f38629b3b4a73b4de2c85ff3c32153"
+    "www/img/hat_32x9.png": {
+      "checksum": "c335abe4ee8d2dde170b8b2ebb17e760"
     },
-    "www/img/jerseys_10x1.png": {
-      "checksum": "072dcd2f73adba1cc20d25c26617c68a"
+    "www/img/jersey_10x1.png": {
+      "checksum": "40ec1aedeff69aac2d17068f73a5545f"
     },
-    "www/img/jerseys_10x10.png": {
-      "checksum": "a12ad5c54c8a491dc94faf4c5fd53345"
+    "www/img/jersey_10x10.png": {
+      "checksum": "a250a9be21ca5cf4c43308296fddbd4f"
     },
-    "www/img/jerseys_10x2.png": {
-      "checksum": "baee562659b5261517e81a6b23751882"
+    "www/img/jersey_10x2.png": {
+      "checksum": "60d4a56210c64b8aeb90a045c5687800"
     },
-    "www/img/jerseys_10x3.png": {
-      "checksum": "5d5c39ff9bdcd158b6f6fd5e1f66152e"
+    "www/img/jersey_10x3.png": {
+      "checksum": "c3d0f1ba026a7ba4423a43291f871647"
     },
-    "www/img/jerseys_10x4.png": {
-      "checksum": "6cefdb8e332e648418ae1cc52d980ba9"
+    "www/img/jersey_10x4.png": {
+      "checksum": "5a3ce143d510329e1abb8b5b04e032bf"
     },
-    "www/img/jerseys_10x5.png": {
-      "checksum": "7bb6d0a7fb2cc2c51863c42bc22537f5"
+    "www/img/jersey_10x5.png": {
+      "checksum": "45195c310db618ca3a21a7aea771ab49"
     },
-    "www/img/jerseys_10x6.png": {
-      "checksum": "ad73943fcf9897c896740bf7ebf24ff3"
+    "www/img/jersey_10x6.png": {
+      "checksum": "f43b9ac5f87581b781327406cc5428b5"
     },
-    "www/img/jerseys_10x7.png": {
-      "checksum": "45977921c1b53745491bc1dcceffbfe5"
+    "www/img/jersey_10x7.png": {
+      "checksum": "a60191a062fd5070cd80e3ec9d975936"
     },
-    "www/img/jerseys_10x8.png": {
-      "checksum": "e60bb34e4b09058d39e0fc3f20dd60e6"
+    "www/img/jersey_10x8.png": {
+      "checksum": "f3fe21ef98a6eca70e27fac64acba752"
     },
-    "www/img/jerseys_10x9.png": {
-      "checksum": "e71abdc8c882ebac60b42b1c3657df16"
+    "www/img/jersey_10x9.png": {
+      "checksum": "e8621d116e49cdebfad98c8404defe2f"
     },
-    "www/img/jerseys_11x1.png": {
-      "checksum": "aa07afb50397af59f0c5fb665b4c8004"
+    "www/img/jersey_11x1.png": {
+      "checksum": "f0cfed76888620f508a68f48c1e883da"
     },
-    "www/img/jerseys_11x10.png": {
-      "checksum": "e2c93ce856d0639a45d4965afe4789ce"
+    "www/img/jersey_11x10.png": {
+      "checksum": "8994aec512ab6b9af6b9584ec6af3d32"
     },
-    "www/img/jerseys_11x2.png": {
-      "checksum": "6c0032468e0f231c3c2ef086672dc66a"
+    "www/img/jersey_11x2.png": {
+      "checksum": "397e381860a84e003d8425a03893ee0e"
     },
-    "www/img/jerseys_11x3.png": {
-      "checksum": "e3b8c0ad531e4173220780952f1eb48f"
+    "www/img/jersey_11x3.png": {
+      "checksum": "e5cc57456502ded3468f5908bafa3e42"
     },
-    "www/img/jerseys_11x4.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_11x4.png": {
+      "checksum": "45caa0d46abb7b39cfc871514e6ad465"
     },
-    "www/img/jerseys_11x5.png": {
-      "checksum": "b9b5ba5f24b67f0ff40367536d9900e8"
+    "www/img/jersey_11x5.png": {
+      "checksum": "2642765063601aff765293dc5b32026f"
     },
-    "www/img/jerseys_11x6.png": {
-      "checksum": "5ede542c14ba5236d58c86a3dd1d9db4"
+    "www/img/jersey_11x6.png": {
+      "checksum": "4478f9775e8c2bba60cf9d7a2103be3e"
     },
-    "www/img/jerseys_11x7.png": {
-      "checksum": "8ab14394ab6377fec5023a9822301bfe"
+    "www/img/jersey_11x7.png": {
+      "checksum": "b4445f6cf835bcf81694c9344775bed2"
     },
-    "www/img/jerseys_11x8.png": {
-      "checksum": "5e34b90c625ccb9fa8255c9398e005c2"
+    "www/img/jersey_11x8.png": {
+      "checksum": "1d9c72d6a26e3f775d461c9c1143a442"
     },
-    "www/img/jerseys_11x9.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_11x9.png": {
+      "checksum": "45caa0d46abb7b39cfc871514e6ad465"
     },
-    "www/img/jerseys_12x1.png": {
-      "checksum": "84539570a6b9c99bb948bf3f987d8944"
+    "www/img/jersey_12x1.png": {
+      "checksum": "e8e238d5ad0d32e5afb5a899afb6e581"
     },
-    "www/img/jerseys_12x10.png": {
-      "checksum": "3f2408907b493e2bd6431fdb0bd73651"
+    "www/img/jersey_12x10.png": {
+      "checksum": "6fae8bbe962810786620d029887e2e30"
     },
-    "www/img/jerseys_12x2.png": {
-      "checksum": "e87a76d613eee24b8a1874c8948ef7f8"
+    "www/img/jersey_12x2.png": {
+      "checksum": "e6c91b672d49c2a822d52235a107e363"
     },
-    "www/img/jerseys_12x3.png": {
-      "checksum": "dfa921ea8bea8d3e2ad69246f70e73ca"
+    "www/img/jersey_12x3.png": {
+      "checksum": "c75bdf7eff1684a952dc537400ef6eb4"
     },
-    "www/img/jerseys_12x4.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_12x4.png": {
+      "checksum": "031d58c72874d9798bc280a3b3a338fc"
     },
-    "www/img/jerseys_12x5.png": {
-      "checksum": "70d7cd3a5392504edca4d746b8548b1d"
+    "www/img/jersey_12x5.png": {
+      "checksum": "31add5b83e6b68cfd875f45dea1b3ba9"
     },
-    "www/img/jerseys_12x6.png": {
-      "checksum": "0f35c0064f634b7dec3f0bc576233780"
+    "www/img/jersey_12x6.png": {
+      "checksum": "eea88763167791898b751f4618bd8223"
     },
-    "www/img/jerseys_12x7.png": {
-      "checksum": "219f95e5ecbc27ad1e639b57b3a7a55c"
+    "www/img/jersey_12x7.png": {
+      "checksum": "f16b3c9daeebc9b82d5c4f8a99c732d9"
     },
-    "www/img/jerseys_12x8.png": {
-      "checksum": "b491dbc67398cc4c5d12b817537e7c3b"
+    "www/img/jersey_12x8.png": {
+      "checksum": "45d5c96239489d3ecd140631008e30eb"
     },
-    "www/img/jerseys_12x9.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_12x9.png": {
+      "checksum": "031d58c72874d9798bc280a3b3a338fc"
     },
-    "www/img/jerseys_13x1.png": {
-      "checksum": "e24d11eebc4297399094f1980fbe418b"
+    "www/img/jersey_13x1.png": {
+      "checksum": "a02844a553454116904b14ad7d08c55b"
     },
-    "www/img/jerseys_13x10.png": {
-      "checksum": "1ed2a17b4e12c84eaae6ab946abd56f9"
+    "www/img/jersey_13x10.png": {
+      "checksum": "dba3fe74a81f9b9e4751574e18413104"
     },
-    "www/img/jerseys_13x2.png": {
-      "checksum": "bc632fe29fae8b81d5f695fdc705380e"
+    "www/img/jersey_13x2.png": {
+      "checksum": "c617a175b652b2cf0b23fb0574735e04"
     },
-    "www/img/jerseys_13x3.png": {
-      "checksum": "56a4a583f8bb96c3661822807cc7b203"
+    "www/img/jersey_13x3.png": {
+      "checksum": "ff2e5441494e484220a7a0c2803df303"
     },
-    "www/img/jerseys_13x4.png": {
-      "checksum": "43dfee5cbda579d7d49aa828f54832a8"
+    "www/img/jersey_13x4.png": {
+      "checksum": "813aba5a6470d4d68407eb175f03922b"
     },
-    "www/img/jerseys_13x5.png": {
-      "checksum": "bc20783a09716de92720df6f0dd59044"
+    "www/img/jersey_13x5.png": {
+      "checksum": "6b106efb4b5e200d382a13eef557ca66"
     },
-    "www/img/jerseys_13x6.png": {
-      "checksum": "fc326cd329d6aa9fd6447ed40fe5fa71"
+    "www/img/jersey_13x6.png": {
+      "checksum": "4d9a77bbb00cf1603533d63f460f07e4"
     },
-    "www/img/jerseys_13x7.png": {
-      "checksum": "9cf20648f852027e0a0af7b1a6de44fa"
+    "www/img/jersey_13x7.png": {
+      "checksum": "9db7b525e09c3253b0d74de85e71faa7"
     },
-    "www/img/jerseys_13x8.png": {
-      "checksum": "672719c553fe80806d750181cededb68"
+    "www/img/jersey_13x8.png": {
+      "checksum": "cebf4de30691d6875ec439851b9623b4"
     },
-    "www/img/jerseys_13x9.png": {
-      "checksum": "aed129586fbfa9e14f74fda82e497fd9"
+    "www/img/jersey_13x9.png": {
+      "checksum": "2841f0b5fc06a3a6f1da598ca296a7db"
     },
-    "www/img/jerseys_14x1.png": {
-      "checksum": "8021f1c2318c1853f995952de0502165"
+    "www/img/jersey_14x1.png": {
+      "checksum": "d46146f0b274bfb3bf90ed5700a5e5dd"
     },
-    "www/img/jerseys_14x10.png": {
-      "checksum": "16e177272a1ebe9ada9da06bc20196d0"
+    "www/img/jersey_14x10.png": {
+      "checksum": "98618fe860122604e96ca644b933193b"
     },
-    "www/img/jerseys_14x2.png": {
-      "checksum": "9f630af79b7cd0a7c20c5a9f7f111894"
+    "www/img/jersey_14x2.png": {
+      "checksum": "df257f00622978fe590d65365ee138ff"
     },
-    "www/img/jerseys_14x3.png": {
-      "checksum": "3de48abfa8803bb5107fa3243f241365"
+    "www/img/jersey_14x3.png": {
+      "checksum": "18d9854bf544ecf5660432a5aee7519e"
     },
-    "www/img/jerseys_14x4.png": {
-      "checksum": "f94780ffc97e3d02c62eddbd59cc9335"
+    "www/img/jersey_14x4.png": {
+      "checksum": "12895d6e7441fecd6b8a6ef9cfa946bd"
     },
-    "www/img/jerseys_14x5.png": {
-      "checksum": "16415905c6c5205cfc183088da77b337"
+    "www/img/jersey_14x5.png": {
+      "checksum": "07726908b6ebc6ace0940b870001c047"
     },
-    "www/img/jerseys_14x6.png": {
-      "checksum": "36519b6a4aafaabb9f4298dabed5cad4"
+    "www/img/jersey_14x6.png": {
+      "checksum": "d0e50bf0295c4ea59ea1c05e90bc5113"
     },
-    "www/img/jerseys_14x7.png": {
-      "checksum": "6a4f009f845860603342afad8c581267"
+    "www/img/jersey_14x7.png": {
+      "checksum": "92f20d6197ebff777367ccc655fe8444"
     },
-    "www/img/jerseys_14x8.png": {
-      "checksum": "aeaeeb0a624ac9c1633d097ff8c933fa"
+    "www/img/jersey_14x8.png": {
+      "checksum": "691f9166239316fb1d7b67a5450cf8ba"
     },
-    "www/img/jerseys_14x9.png": {
-      "checksum": "74374a0592c5e1b2e7f682545937b6cf"
+    "www/img/jersey_14x9.png": {
+      "checksum": "a8883ee4cb5a738dca918c3004d9756e"
     },
-    "www/img/jerseys_15x1.png": {
-      "checksum": "bf88f99e021c70d5115cbdcf1d51cbe0"
+    "www/img/jersey_15x1.png": {
+      "checksum": "2abbafb6a91c292487e1fe40458904ce"
     },
-    "www/img/jerseys_15x10.png": {
-      "checksum": "58da4dda23033c0c765614db7dcdb0fb"
+    "www/img/jersey_15x10.png": {
+      "checksum": "53d079a391236d41c0829780d2057e3e"
     },
-    "www/img/jerseys_15x2.png": {
-      "checksum": "465615636825bdfc0726b8762dfd58ce"
+    "www/img/jersey_15x2.png": {
+      "checksum": "3d61ee9209e4de6d6c6ead0a0a1ac0ec"
     },
-    "www/img/jerseys_15x3.png": {
-      "checksum": "efbe8654b439a53ce47db7f38987ff58"
+    "www/img/jersey_15x3.png": {
+      "checksum": "5dd9414eef442d2f0e3adbe1bffc43c4"
     },
-    "www/img/jerseys_15x4.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_15x4.png": {
+      "checksum": "63243a36db160578dc7aae51dd29c464"
     },
-    "www/img/jerseys_15x5.png": {
-      "checksum": "9a20375a0ff52aed2fb4840e8a8ad906"
+    "www/img/jersey_15x5.png": {
+      "checksum": "a030eeb9fbd56fc554e4d79849b1b106"
     },
-    "www/img/jerseys_15x6.png": {
-      "checksum": "0eedd26d04a0b9f85e3e1534b5a6b1cf"
+    "www/img/jersey_15x6.png": {
+      "checksum": "0d956b6cf866678eb134395428c363f2"
     },
-    "www/img/jerseys_15x7.png": {
-      "checksum": "8dea1a43570d95d9bfb6515515a8308f"
+    "www/img/jersey_15x7.png": {
+      "checksum": "cc0ac42fcbf38134efc50d414b67fc4d"
     },
-    "www/img/jerseys_15x8.png": {
-      "checksum": "a28e80a6bd17911fe88b39d30ed0e8e0"
+    "www/img/jersey_15x8.png": {
+      "checksum": "6f9f78fa1187265b296b6e3f800ad20a"
     },
-    "www/img/jerseys_15x9.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_15x9.png": {
+      "checksum": "63243a36db160578dc7aae51dd29c464"
     },
-    "www/img/jerseys_16x1.png": {
-      "checksum": "8416c61f89f38d2121921dab514b06c0"
+    "www/img/jersey_16x1.png": {
+      "checksum": "8044c32be8ab51e0b9d48a9c9c7a72b6"
     },
-    "www/img/jerseys_16x10.png": {
-      "checksum": "7751e38604db79a9b0758b0b1fd79dc7"
+    "www/img/jersey_16x10.png": {
+      "checksum": "77f3152742175c1cb042d60cef3fade1"
     },
-    "www/img/jerseys_16x2.png": {
-      "checksum": "98ecfe214b689c4fb1d16d3357600db4"
+    "www/img/jersey_16x2.png": {
+      "checksum": "4d143aa5a4d2bb63aa2e947f38fd9537"
     },
-    "www/img/jerseys_16x3.png": {
-      "checksum": "b83c58783be112479a342a959667b771"
+    "www/img/jersey_16x3.png": {
+      "checksum": "b12cbafce3417d58f02621e05b90cc42"
     },
-    "www/img/jerseys_16x4.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_16x4.png": {
+      "checksum": "b6a32546d4cea400d6845ecd9fa67e50"
     },
-    "www/img/jerseys_16x5.png": {
-      "checksum": "bce9f27f3498312b50e16cb1d20a2f27"
+    "www/img/jersey_16x5.png": {
+      "checksum": "19a8b23cbf60751c24e507dab71685c8"
     },
-    "www/img/jerseys_16x6.png": {
-      "checksum": "59758e929b2d67abb732b3db647d7f48"
+    "www/img/jersey_16x6.png": {
+      "checksum": "a972022b5f3f699ee0f041beab13f544"
     },
-    "www/img/jerseys_16x7.png": {
-      "checksum": "3f141b16e6b7ee093a416eeaf60e3b3e"
+    "www/img/jersey_16x7.png": {
+      "checksum": "f368d27912614989be2992312fed444c"
     },
-    "www/img/jerseys_16x8.png": {
-      "checksum": "4128b45d874d6fc6cf6165fd1b60eca7"
+    "www/img/jersey_16x8.png": {
+      "checksum": "aac0467a34363df4a11b81f3cf0f69f3"
     },
-    "www/img/jerseys_16x9.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_16x9.png": {
+      "checksum": "b6a32546d4cea400d6845ecd9fa67e50"
     },
-    "www/img/jerseys_17x1.png": {
-      "checksum": "fb8f928a7c1ab6074b74458879db076a"
+    "www/img/jersey_17x1.png": {
+      "checksum": "fb63561145b5e5b96ced9a878354f1ad"
     },
-    "www/img/jerseys_17x10.png": {
-      "checksum": "9726a79b55eae7ffde97c7d88e33f3db"
+    "www/img/jersey_17x10.png": {
+      "checksum": "60bc64d04c405e160d3d575acfb52d81"
     },
-    "www/img/jerseys_17x2.png": {
-      "checksum": "93c825591b0ede3cd4d652f7c36baafa"
+    "www/img/jersey_17x2.png": {
+      "checksum": "b3015af1f47cb5a7ed3db1d057b56efd"
     },
-    "www/img/jerseys_17x3.png": {
-      "checksum": "483879bff389d71d005dd3756015c4ac"
+    "www/img/jersey_17x3.png": {
+      "checksum": "12ebd5cddf0942a33b344013f784b6fd"
     },
-    "www/img/jerseys_17x4.png": {
-      "checksum": "17b61690255c5e612fce870709a97d2f"
+    "www/img/jersey_17x4.png": {
+      "checksum": "1fdc11256f65ee7fb75bd1fae664f7ee"
     },
-    "www/img/jerseys_17x5.png": {
-      "checksum": "01f0bd6fe917cded8dc5b0bdc7a9d402"
+    "www/img/jersey_17x5.png": {
+      "checksum": "1140d91e150955b7724578bf4496d247"
     },
-    "www/img/jerseys_17x6.png": {
-      "checksum": "e3bf7147e0bfaffbf134e2a88f28cc40"
+    "www/img/jersey_17x6.png": {
+      "checksum": "3b902c04986684fa69c40b2cc2c35f0e"
     },
-    "www/img/jerseys_17x7.png": {
-      "checksum": "17c53ebc51f41a619747184c1edbf055"
+    "www/img/jersey_17x7.png": {
+      "checksum": "3a40895a8a461fa4418553a72cf18ab4"
     },
-    "www/img/jerseys_17x8.png": {
-      "checksum": "42f337e2aefeccdfad0189a4c7351a8e"
+    "www/img/jersey_17x8.png": {
+      "checksum": "a2cf1269f3e9c3784a8079d06bce87b9"
     },
-    "www/img/jerseys_17x9.png": {
-      "checksum": "54fae07ff10743ae1a192058ba13864f"
+    "www/img/jersey_17x9.png": {
+      "checksum": "2437dbeccb3ffd423557f24552d3e4d6"
     },
-    "www/img/jerseys_18x1.png": {
-      "checksum": "a79a3805bfa7b30f1ea34af3f7eef1a1"
+    "www/img/jersey_18x1.png": {
+      "checksum": "f5198e134476b4bf854faf1d5e22c101"
     },
-    "www/img/jerseys_18x10.png": {
-      "checksum": "c4af2f79d905bfa4893af1c900693d6b"
+    "www/img/jersey_18x10.png": {
+      "checksum": "8f50e70edf2d4a8e6e672cf88125d33b"
     },
-    "www/img/jerseys_18x2.png": {
-      "checksum": "a2a18dabfe3317fe8fec24ad040130b4"
+    "www/img/jersey_18x2.png": {
+      "checksum": "82a6b68aab9b1883f85d3fefdb7e9038"
     },
-    "www/img/jerseys_18x3.png": {
-      "checksum": "d38522ae33f3efca8a84fe0d897b15c5"
+    "www/img/jersey_18x3.png": {
+      "checksum": "252e3d64e10537bcfded57b41e278565"
     },
-    "www/img/jerseys_18x4.png": {
-      "checksum": "200d705dc51ea986d61adcd58c2acb82"
+    "www/img/jersey_18x4.png": {
+      "checksum": "ea0abacbdbb26f9e3d6157f3137d37fd"
     },
-    "www/img/jerseys_18x5.png": {
-      "checksum": "b0fc261725f82595b9f912c0bcdbb55e"
+    "www/img/jersey_18x5.png": {
+      "checksum": "350689a5e3f62b9010434346dd7e5f3a"
     },
-    "www/img/jerseys_18x6.png": {
-      "checksum": "ec021a851f049737a70c362bba4364d3"
+    "www/img/jersey_18x6.png": {
+      "checksum": "e2fb6d39d7f9eea76ff12e46452fba50"
     },
-    "www/img/jerseys_18x7.png": {
-      "checksum": "10ed0047eddf541ca24927fdc023e32d"
+    "www/img/jersey_18x7.png": {
+      "checksum": "abbb116239b506446435b1c90d281c0c"
     },
-    "www/img/jerseys_18x8.png": {
-      "checksum": "652667fd6d27ad4b538aa05b9416cca6"
+    "www/img/jersey_18x8.png": {
+      "checksum": "00a39c433fe6689b74e90086a53b72ac"
     },
-    "www/img/jerseys_18x9.png": {
-      "checksum": "7f9d6994e4108d0767ceeb34f2f510b1"
+    "www/img/jersey_18x9.png": {
+      "checksum": "3037d726c8eb23833e2f13172f5cd1df"
     },
-    "www/img/jerseys_7x1.png": {
-      "checksum": "2fb7e8bb319407450582672dbc3c238a"
+    "www/img/jersey_7x1.png": {
+      "checksum": "75a3456ea59b249539991996466376ad"
     },
-    "www/img/jerseys_7x10.png": {
-      "checksum": "136c534cd12e2015cf3d6d4880e7b986"
+    "www/img/jersey_7x10.png": {
+      "checksum": "92405c6d93c56cfa3347c027c2d3cdc7"
     },
-    "www/img/jerseys_7x2.png": {
-      "checksum": "4299692548bee2c6ccefe720589287c2"
+    "www/img/jersey_7x2.png": {
+      "checksum": "71e8264d7f293c3041a2113f0fd03887"
     },
-    "www/img/jerseys_7x3.png": {
-      "checksum": "a5bed9311f4107a3f27a147463c7eeb7"
+    "www/img/jersey_7x3.png": {
+      "checksum": "ee998e64a16c6296d32d3d7fcac34afe"
     },
-    "www/img/jerseys_7x4.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_7x4.png": {
+      "checksum": "45caa0d46abb7b39cfc871514e6ad465"
     },
-    "www/img/jerseys_7x5.png": {
-      "checksum": "91c31c818f55dcf4fd21acdd9582dc05"
+    "www/img/jersey_7x5.png": {
+      "checksum": "fa740369fe337d2d79b55b69c742886e"
     },
-    "www/img/jerseys_7x6.png": {
-      "checksum": "d39dee7d65a5c92843609ff88dba13c0"
+    "www/img/jersey_7x6.png": {
+      "checksum": "8b40fef13d37acb935af367094e95633"
     },
-    "www/img/jerseys_7x7.png": {
-      "checksum": "a31c5d3a0557285d4ee0e031f43212a4"
+    "www/img/jersey_7x7.png": {
+      "checksum": "72df87fe23bc5c5c40c8d1bb73e151f6"
     },
-    "www/img/jerseys_7x8.png": {
-      "checksum": "f1c3263404da5fa0912e506529964071"
+    "www/img/jersey_7x8.png": {
+      "checksum": "cfd46998883fac9c927e0fad3916fc73"
     },
-    "www/img/jerseys_7x9.png": {
-      "checksum": "28e591ce8339ea470bd2315382c399c8"
+    "www/img/jersey_7x9.png": {
+      "checksum": "45caa0d46abb7b39cfc871514e6ad465"
     },
-    "www/img/jerseys_8x1.png": {
-      "checksum": "50dd6f9a5eb35fdf64c16194d80ed088"
+    "www/img/jersey_8x1.png": {
+      "checksum": "6da93f6d3073a4bbc79a998856802168"
     },
-    "www/img/jerseys_8x10.png": {
-      "checksum": "88d4775f13f2217ef1b002a667dc421d"
+    "www/img/jersey_8x10.png": {
+      "checksum": "a20334d1d7b4c0e5e38ca518aed36944"
     },
-    "www/img/jerseys_8x2.png": {
-      "checksum": "6bdc1c9ae5a2cfca036056633238dca2"
+    "www/img/jersey_8x2.png": {
+      "checksum": "07dc670fe87669429e73d97ec6728f2e"
     },
-    "www/img/jerseys_8x3.png": {
-      "checksum": "7c85a64a27b74829a47552e48060de24"
+    "www/img/jersey_8x3.png": {
+      "checksum": "5c25fe77364789df35ce9268d8423f21"
     },
-    "www/img/jerseys_8x4.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_8x4.png": {
+      "checksum": "031d58c72874d9798bc280a3b3a338fc"
     },
-    "www/img/jerseys_8x5.png": {
-      "checksum": "14cdfa854a6a172fb01d6989bba5bcc5"
+    "www/img/jersey_8x5.png": {
+      "checksum": "9d88e75c1e3cd44012d27e35dc6dccf8"
     },
-    "www/img/jerseys_8x6.png": {
-      "checksum": "e5e0ce21ff500c301a54e83864e9649c"
+    "www/img/jersey_8x6.png": {
+      "checksum": "3b3c3dd7cb6705a1ff6e4f0f80bd12c3"
     },
-    "www/img/jerseys_8x7.png": {
-      "checksum": "737b2e1b21e804daf5f580b62843d007"
+    "www/img/jersey_8x7.png": {
+      "checksum": "fab5f6e8d0b2a01954db76dbbc7b0e93"
     },
-    "www/img/jerseys_8x8.png": {
-      "checksum": "567553a4cea3229579199fcff1b2acf6"
+    "www/img/jersey_8x8.png": {
+      "checksum": "e745a1f07ed85f6828d6cdaff8f00ac7"
     },
-    "www/img/jerseys_8x9.png": {
-      "checksum": "0bc491b6733ef25976f5a847844aab0b"
+    "www/img/jersey_8x9.png": {
+      "checksum": "031d58c72874d9798bc280a3b3a338fc"
     },
-    "www/img/jerseys_9x1.png": {
-      "checksum": "bede7ce1103fa4b09cfe53162e6c5efc"
+    "www/img/jersey_9x1.png": {
+      "checksum": "b35f249b87932b6f733fb4d592f370c1"
     },
-    "www/img/jerseys_9x10.png": {
-      "checksum": "cb09e95675edd7f28ce8b7a38e4b8cdf"
+    "www/img/jersey_9x10.png": {
+      "checksum": "d13f691b914aaafce0a9374e4629255b"
     },
-    "www/img/jerseys_9x2.png": {
-      "checksum": "0eacace71319b5e2f572db3507d32b44"
+    "www/img/jersey_9x2.png": {
+      "checksum": "845c8cd6eb9dee801f153b6e7aa09851"
     },
-    "www/img/jerseys_9x3.png": {
-      "checksum": "e919b58b01c9ba8738e76c516a7e45c1"
+    "www/img/jersey_9x3.png": {
+      "checksum": "9ab5f61cf57c5d8a2226b8fe37832f92"
     },
-    "www/img/jerseys_9x4.png": {
-      "checksum": "f6f4cd410b09bb58dea83e67f1422171"
+    "www/img/jersey_9x4.png": {
+      "checksum": "6c766b1a271ea488f3a3f4994c622b26"
     },
-    "www/img/jerseys_9x5.png": {
-      "checksum": "fd29fa24334bacf569f2139e4e67c8b9"
+    "www/img/jersey_9x5.png": {
+      "checksum": "b1c49c50879f28b0921debd5c4c99823"
     },
-    "www/img/jerseys_9x6.png": {
-      "checksum": "93e29b45cfea76a27a59dc1e891b41b5"
+    "www/img/jersey_9x6.png": {
+      "checksum": "37894d79227d97a955b21c01f71a5adc"
     },
-    "www/img/jerseys_9x7.png": {
-      "checksum": "1599ac221b3ec18300011bf83d413ada"
+    "www/img/jersey_9x7.png": {
+      "checksum": "da3364290ea3090a6b43b31a19f88ec1"
     },
-    "www/img/jerseys_9x8.png": {
-      "checksum": "57b32bdaeb587270fde4bb717cb97a3e"
+    "www/img/jersey_9x8.png": {
+      "checksum": "75afc11a640349b9bcfe30c8c4ac63e9"
     },
-    "www/img/jerseys_9x9.png": {
-      "checksum": "890de0ff13d921fd1a6ed8b78a6883e0"
+    "www/img/jersey_9x9.png": {
+      "checksum": "1bc2fcf920f45b0194c9d358d4bca747"
     },
-    "www/img/shields_34x1.png": {
-      "checksum": "b9573a16ea959dca0f678530bb30ddca"
+    "www/img/shield_34x1.png": {
+      "checksum": "415f0bbbd321f231e6850e624c417536"
     },
-    "www/img/shields_34x2.png": {
-      "checksum": "e664e4e6875204f6f09fc1f281c609f8"
+    "www/img/shield_34x2.png": {
+      "checksum": "4099793e3d2225f94ac9ae0467626f79"
     },
-    "www/img/shields_34x3.png": {
-      "checksum": "8398400abbcb5182c57eee9f9bf3f537"
+    "www/img/shield_34x3.png": {
+      "checksum": "66cf740b31f0c6eabfcbe5d1b5e3697b"
     },
-    "www/img/shields_34x4.png": {
-      "checksum": "21aa60bc6e0f6cddf715c3c3f353c9f6"
+    "www/img/shield_34x4.png": {
+      "checksum": "b9c599be38354826090bfd33d4eeca58"
     },
-    "www/img/shields_34x5.png": {
-      "checksum": "b225189e82b73a73b8ed379219ae7c78"
+    "www/img/shield_34x5.png": {
+      "checksum": "fa4f62a331907cb5f0c34d1997bb7b13"
     },
-    "www/img/shields_34x6.png": {
-      "checksum": "57899d4b8cbf48dff633083127ce24bf"
+    "www/img/shield_34x6.png": {
+      "checksum": "7ba90cb37e52b785089ceb77a328295a"
     },
-    "www/img/shields_34x7.png": {
-      "checksum": "b582d7756a56299adcd1901e6b4b9dd8"
+    "www/img/shield_34x7.png": {
+      "checksum": "5627e3757a18a1216f2bf29e87b58d94"
     },
-    "www/img/shields_34x8.png": {
-      "checksum": "c620c290280fabb6dc709179ad321cb4"
+    "www/img/shield_34x8.png": {
+      "checksum": "e1e855f3472d34a4db737fbd1ec1ccd7"
     },
-    "www/img/shields_34x9.png": {
-      "checksum": "2392877662daa10608e69ae001101fed"
+    "www/img/shield_34x9.png": {
+      "checksum": "5caed959a9f0f9d3c901425e6c47c12f"
     },
-    "www/img/shields_35x1.png": {
-      "checksum": "c13ac2c470ca088735c29fd2243348a3"
+    "www/img/shield_35x1.png": {
+      "checksum": "24889c395125f257d0bf6518bfed6d9a"
     },
-    "www/img/shields_35x2.png": {
-      "checksum": "d394734668b45137e5bce1bce2701409"
+    "www/img/shield_35x2.png": {
+      "checksum": "ef07d2df49a30864a79aeb8aeff11ade"
     },
-    "www/img/shields_35x3.png": {
-      "checksum": "2f7af18c51495f749bc201b197f31a6d"
+    "www/img/shield_35x3.png": {
+      "checksum": "ee3c7b798b32e8bff997522a97a18eea"
     },
-    "www/img/shields_35x4.png": {
-      "checksum": "a3d3b786a8bac3c4efcce11b71fb6bbd"
+    "www/img/shield_35x4.png": {
+      "checksum": "af5fb4a38a938e083f0a3963fcf3f40b"
     },
-    "www/img/shields_35x5.png": {
-      "checksum": "26813e8a4647047187428ce11503cc60"
+    "www/img/shield_35x5.png": {
+      "checksum": "bd3fb2d6646b976a4ebec04662d72b7f"
     },
-    "www/img/shields_35x6.png": {
-      "checksum": "e00bdfe834507cc858cd3e8413b9368a"
+    "www/img/shield_35x6.png": {
+      "checksum": "02570af71f94c0e12d5181f881b2576f"
     },
-    "www/img/shields_35x7.png": {
-      "checksum": "034c61ab4d42cbb8fe9ce45effc74e9f"
+    "www/img/shield_35x7.png": {
+      "checksum": "de813a533d2f5f67982a52d6ae15e043"
     },
-    "www/img/shields_35x8.png": {
-      "checksum": "66a91291d70fdce0758b1bce5ab2ad32"
+    "www/img/shield_35x8.png": {
+      "checksum": "ed9bebd025336be2fabed8a323c55ad5"
     },
-    "www/img/shields_35x9.png": {
-      "checksum": "9388ae273346759681f9a596db976889"
+    "www/img/shield_35x9.png": {
+      "checksum": "24a7c3b79b85c8499d0b06a5f59cc2e1"
     },
-    "www/img/shields_36x1.png": {
-      "checksum": "1cd00d5f5555e0fcf21641f1b6e3051c"
+    "www/img/shield_36x1.png": {
+      "checksum": "bdb0f7b3069326a949f4f6ca07d820a6"
     },
-    "www/img/shields_36x2.png": {
-      "checksum": "f35fa43876bc6773fb567cf60e800986"
+    "www/img/shield_36x2.png": {
+      "checksum": "953645e569ce191b1ff834ac42da18aa"
     },
-    "www/img/shields_36x4.png": {
-      "checksum": "d7be2865b8d6ca4e912ddada6052e5b9"
+    "www/img/shield_36x4.png": {
+      "checksum": "ddf542ee29a643bed9d0f79334348037"
     },
-    "www/img/shields_36x5.png": {
-      "checksum": "33256f796bec208c070390dcda68311f"
+    "www/img/shield_36x5.png": {
+      "checksum": "3bed5ae7045a4645eab3b2d1dacdc370"
     },
-    "www/img/shields_36x7.png": {
-      "checksum": "017b37cc57468f51508cb399b3af7aac"
+    "www/img/shield_36x7.png": {
+      "checksum": "cf91b8adb967c5588241ebcfb56193c3"
     },
-    "www/img/shields_36x8.png": {
-      "checksum": "c32ddb59ddbf57883c7eea1c7374c3cd"
+    "www/img/shield_36x8.png": {
+      "checksum": "69cb07df2e7814276e174cca0f9d8632"
     },
-    "www/img/shields_37x1.png": {
-      "checksum": "6cd1cc6788273156f38240cf58bb94ca"
+    "www/img/shield_37x1.png": {
+      "checksum": "86aee90486ac3100f88e77f3b47c7658"
     },
-    "www/img/shields_37x2.png": {
-      "checksum": "9dbfd184698c7a5ab6d3930f826f3e33"
+    "www/img/shield_37x2.png": {
+      "checksum": "ba77aa0747cda10a91e6cefb402c973a"
     },
-    "www/img/shields_37x4.png": {
-      "checksum": "64b12535900b4c97bb74b22a4c4692f5"
+    "www/img/shield_37x4.png": {
+      "checksum": "c02992da806d625efdd169c48b4ea753"
     },
-    "www/img/shields_37x5.png": {
-      "checksum": "747c6d5962286c8808a5ca304d600afc"
+    "www/img/shield_37x5.png": {
+      "checksum": "73f56bb404f66841762f415c25542b19"
     },
-    "www/img/shields_37x7.png": {
-      "checksum": "7016d19f865e720309bad035d6205a9c"
+    "www/img/shield_37x7.png": {
+      "checksum": "a180361dd8a84de7cd9a2ab36fe98a1c"
     },
-    "www/img/shields_37x8.png": {
-      "checksum": "f32218e08fcbd03807c5e1b3b8e0d2e9"
+    "www/img/shield_37x8.png": {
+      "checksum": "f2ad3c62f7af3cf92758e576e16aa73f"
     },
-    "www/img/shields_38x1.png": {
-      "checksum": "2224be82b04b37a6b2c45fa0a40d843f"
+    "www/img/shield_38x1.png": {
+      "checksum": "8ad189cff6ad6c34104995b0644fe33e"
     },
-    "www/img/shields_38x2.png": {
-      "checksum": "093c156eaecb2e6c420368e55a4d3a96"
+    "www/img/shield_38x2.png": {
+      "checksum": "0dc6741e5d705aabac53a24650adf80e"
     },
-    "www/img/shields_38x3.png": {
-      "checksum": "f54c8be0672ac9aed5f1586d2560e020"
+    "www/img/shield_38x3.png": {
+      "checksum": "4219da2dc90fe2c6562a1275fb50e665"
     },
-    "www/img/shields_38x4.png": {
-      "checksum": "5f82e046edd474284f9198fff1f5fba6"
+    "www/img/shield_38x4.png": {
+      "checksum": "90cce76365add6452d24f97e56e1ddbf"
     },
-    "www/img/shields_38x5.png": {
-      "checksum": "aaf20bfcbf2342c6a9fc110da7d63da2"
+    "www/img/shield_38x5.png": {
+      "checksum": "c3cfba731b21dcb488b6e76f11810285"
     },
-    "www/img/shields_38x6.png": {
-      "checksum": "a000a1ea45ff7a65d6cd807945e2adfb"
+    "www/img/shield_38x6.png": {
+      "checksum": "57eea70fb6bcaec4a09ba3619c9410cf"
     },
-    "www/img/shields_38x7.png": {
-      "checksum": "b2feaf0eb70419e854d886d45165bfb2"
+    "www/img/shield_38x7.png": {
+      "checksum": "e9d36ca56a07242ff3e590eba3d5577f"
     },
-    "www/img/shields_38x8.png": {
-      "checksum": "274a67626f0b7b44dca7dbdaf998d37e"
+    "www/img/shield_38x8.png": {
+      "checksum": "dd098d9fd2222b2607f903317f6b7ee3"
     },
-    "www/img/shields_38x9.png": {
-      "checksum": "ee1fb1b7ff81061511ef5f2983975fe7"
+    "www/img/shield_38x9.png": {
+      "checksum": "01d60f0766ed491c357de068874fd437"
     },
-    "www/img/shields_39x1.png": {
-      "checksum": "09f9ab2fcd562911255109efb8be8a9d"
+    "www/img/shield_39x1.png": {
+      "checksum": "c894589d3943983fdb76d12f4600c567"
     },
-    "www/img/shields_39x2.png": {
-      "checksum": "a461762a6e6d891950ba57ceea0aaa64"
+    "www/img/shield_39x2.png": {
+      "checksum": "c300b457f9d75c7730d9c2cf36f031ee"
     },
-    "www/img/shields_39x3.png": {
-      "checksum": "71a5928eb1372bd6e6ff7bccaf50e1e1"
+    "www/img/shield_39x3.png": {
+      "checksum": "3bccc7f0f994ae7b75ca12750b54b75b"
     },
-    "www/img/shields_39x4.png": {
-      "checksum": "6e789df16f5512304790dedacfc6b7ba"
+    "www/img/shield_39x4.png": {
+      "checksum": "b1c6796d0105c2eec30dd1934aee4c4f"
     },
-    "www/img/shields_39x5.png": {
-      "checksum": "606e729ebc9a19fa7eaf5f67c76784d2"
+    "www/img/shield_39x5.png": {
+      "checksum": "4020bab0d0495b2db5bf357464da5c05"
     },
-    "www/img/shields_39x6.png": {
-      "checksum": "869b57dc705263f023fca868ac894461"
+    "www/img/shield_39x6.png": {
+      "checksum": "4f4c9202f97e885178d51a2d13638e45"
     },
-    "www/img/shields_39x7.png": {
-      "checksum": "aaa51edef7bd429eaf4a959a635570ad"
+    "www/img/shield_39x7.png": {
+      "checksum": "0f3e6099cb5fd508b62b74e8c5bb1dcc"
     },
-    "www/img/shields_39x8.png": {
-      "checksum": "3a2cf22be67a04b8406f9f9cc83ae42e"
+    "www/img/shield_39x8.png": {
+      "checksum": "a0cc0b47724539287048f20f69a36aa3"
     },
-    "www/img/shields_39x9.png": {
-      "checksum": "1870343f40927bcb40d576076f207ba6"
+    "www/img/shield_39x9.png": {
+      "checksum": "8feda46a2a5355341bdec572a93126cd"
     },
-    "www/img/shields_40x1.png": {
-      "checksum": "a3b816cfd3c8da0fb032ecddeab05b6e"
+    "www/img/shield_40x1.png": {
+      "checksum": "097c1878cc54a6d6226e786125e93f03"
     },
-    "www/img/shields_40x2.png": {
-      "checksum": "d2609a0d0dc852bad079e78a8cdbe12f"
+    "www/img/shield_40x2.png": {
+      "checksum": "2ca25defd4dea4376703421978cdc194"
     },
-    "www/img/shields_40x4.png": {
-      "checksum": "e1e7bb3698a98220a2cfb54d60b9825a"
+    "www/img/shield_40x4.png": {
+      "checksum": "ffe21aa5b5e7dc12d12deef0710938a4"
     },
-    "www/img/shields_40x5.png": {
-      "checksum": "858e65ea21868a090b286eeef7b99f1f"
+    "www/img/shield_40x5.png": {
+      "checksum": "272f880b06e156c658975b971fdbc7e1"
     },
-    "www/img/shields_40x7.png": {
-      "checksum": "53e5fe2823157ba6e461a30c954530aa"
+    "www/img/shield_40x7.png": {
+      "checksum": "7833e75bdb4859165b0115fc2e3c6dc1"
     },
-    "www/img/shields_40x8.png": {
-      "checksum": "b8fd5530ca0c8dc2f4ca3937ba007c63"
+    "www/img/shield_40x8.png": {
+      "checksum": "4d3a469697a4e53830942edce943538b"
     },
-    "www/img/shields_41x1.png": {
-      "checksum": "7b06184a2db53f853f4bdec896e03a29"
+    "www/img/shield_41x1.png": {
+      "checksum": "c2d5801b20a0b215d48a8e51cf028ffa"
     },
-    "www/img/shields_41x2.png": {
-      "checksum": "78d09f9d310f2928ca7ca3ad5c0d1237"
+    "www/img/shield_41x2.png": {
+      "checksum": "18dbd0cb9c7dbc62133e7957694a4ff6"
     },
-    "www/img/shields_41x4.png": {
-      "checksum": "40a49e9b2febfc903854bec4971b456e"
+    "www/img/shield_41x4.png": {
+      "checksum": "9b326b24c09712c8a6759a4fff550a48"
     },
-    "www/img/shields_41x5.png": {
-      "checksum": "73a0095615600171149111bab562270b"
+    "www/img/shield_41x5.png": {
+      "checksum": "ee844caae956e5667f3e293bed541bcb"
     },
-    "www/img/shields_41x7.png": {
-      "checksum": "88c805116ef3e3fe8598ee892b2927fd"
+    "www/img/shield_41x7.png": {
+      "checksum": "45a7e483c8c93eefaedf8cc87a0180dc"
     },
-    "www/img/shields_41x8.png": {
-      "checksum": "a96a7b4727abe07b73ab0e32759eb245"
+    "www/img/shield_41x8.png": {
+      "checksum": "31310c43a704183d93368eafd558de37"
     },
     "www/img/shoes_4x10.png": {
-      "checksum": "5218f642638f4e2955dd54d24356ae62"
+      "checksum": "ed98847edc47a777c4c5bf7d2f6045f5"
     },
     "www/img/shoes_4x5.png": {
-      "checksum": "8a7462e1f3c9a7bbb7b160119ad6ea7d"
+      "checksum": "e5f27520aa4213953a49438f4e248f2b"
     },
     "www/img/shoes_5x1.png": {
-      "checksum": "a644c66b106cfcc888991ab8027dea86"
+      "checksum": "604461afabbcc6fd4e7b143ab3877ee4"
     },
     "www/img/shoes_5x10.png": {
-      "checksum": "a724a57260e3149143f5131c17c64011"
+      "checksum": "224eb40049695ce0dd7814759fbbc74f"
     },
     "www/img/shoes_5x2.png": {
-      "checksum": "32e3b508611e3f057b0e708c49fdd531"
+      "checksum": "aebe8519101b445437ec03cd2afc683c"
     },
     "www/img/shoes_5x3.png": {
-      "checksum": "80c07301d3199459490bb9d7558e02fa"
+      "checksum": "6540a3369536035b5aac3e3728d16507"
     },
     "www/img/shoes_5x4.png": {
-      "checksum": "ef6947255194640a0f48173c438ce047"
+      "checksum": "1579945484ca9ec75d5aea45d596ff41"
     },
     "www/img/shoes_5x5.png": {
-      "checksum": "93c65a51bd980eb0211532c92944899e"
+      "checksum": "fcc92e9307efe397defe17dd78cfb275"
     },
     "www/img/shoes_5x6.png": {
-      "checksum": "25329286da68023ad855804a46afd2ea"
+      "checksum": "48ab098122a8f3f26b69d8899f4968ae"
     },
     "www/img/shoes_5x7.png": {
-      "checksum": "8ad0e682f18cc28a33c56091469c5bd9"
+      "checksum": "2e015cd20bb1c1c17ca359a7fd61a556"
     },
     "www/img/shoes_5x8.png": {
-      "checksum": "104d8a27c78057ed6124dd254e916eb8"
+      "checksum": "b64cf426bf52fb6b3d2807a71a42256a"
     },
     "www/img/shoes_5x9.png": {
-      "checksum": "71e29c6f0e349adb77af28dce6b31cd3"
+      "checksum": "48f1d0c1526618d834e741cbc2ffff2d"
     },
     "www/img/trousers_4x1.png": {
-      "checksum": "fa776b467ed58c0b28c6ad34c6c1db90"
+      "checksum": "cecd9b124b1261ecf1e397930747d445"
     },
     "www/img/trousers_4x2.png": {
-      "checksum": "bfe2a171a080744b17c894e90d0675a1"
+      "checksum": "20de6e437b1600751bf086f129d0e707"
     },
     "www/img/trousers_4x3.png": {
-      "checksum": "debea08e3314a85d49ce80d0d62982b8"
+      "checksum": "375877f4b72aaa37d1925708f077a913"
     },
     "www/img/trousers_4x4.png": {
-      "checksum": "55ab6ed10d0a7cb03b927568d738f502"
+      "checksum": "854e19270fcdf5467b8ff09f96bc9875"
     },
     "www/img/trousers_4x6.png": {
-      "checksum": "a25f363f86c3b22210f0993d280d59fe"
+      "checksum": "644562a68764c16f2b1fc2c2ced3171e"
     },
     "www/img/trousers_4x7.png": {
-      "checksum": "434f1ae2f1ae07fdc5d75998bbd8de02"
+      "checksum": "f1bc5866c5781964c77244d14a3bf895"
     },
     "www/img/trousers_4x8.png": {
-      "checksum": "679cbd19be73708d4b43ee2a9ead8614"
+      "checksum": "729c48b78c427c09ecce0b760db9a3a2"
     },
     "www/img/trousers_4x9.png": {
-      "checksum": "fea31e659842feaef180dd8eda6f1169"
+      "checksum": "fa9bcc8a7f2441a44bd88073b2e83abd"
     },
-    "www/img/weapons_43x1.png": {
-      "checksum": "59b41667c6ada9167a736d76d828e473"
+    "www/img/weapon_43x1.png": {
+      "checksum": "1e8127c7051b70d0e8fc0361c2ea9913"
     },
-    "www/img/weapons_43x10.png": {
-      "checksum": "dd2e0579f683bb4ab1b6505ecb490cc2"
+    "www/img/weapon_43x10.png": {
+      "checksum": "8033f444264af80e0036cbc6f7de78e3"
     },
-    "www/img/weapons_43x2.png": {
-      "checksum": "06afaa14ed3c7a36b4077313a7acb1ed"
+    "www/img/weapon_43x2.png": {
+      "checksum": "144e7fcb1dbc6dc7309273576c690e78"
     },
-    "www/img/weapons_43x3.png": {
-      "checksum": "e80ba6a43b10541779d03283577a0767"
+    "www/img/weapon_43x3.png": {
+      "checksum": "4a14f9d950dca9abb25ceb769360a5ff"
     },
-    "www/img/weapons_43x4.png": {
-      "checksum": "d0f4b369d21f9a741f00d408b309ff72"
+    "www/img/weapon_43x4.png": {
+      "checksum": "1dcfa830112608f942cac1138759a2a6"
     },
-    "www/img/weapons_43x5.png": {
-      "checksum": "618b3d275a207a3500ed46d5a575e393"
+    "www/img/weapon_43x5.png": {
+      "checksum": "ebe0ed9ac8c4539aef43e86660a6363b"
     },
-    "www/img/weapons_43x6.png": {
-      "checksum": "b2ffcee51f3f89c930ae1b484f89be4d"
+    "www/img/weapon_43x6.png": {
+      "checksum": "f0110bd21896c1dbba12af04b118635c"
     },
-    "www/img/weapons_43x7.png": {
-      "checksum": "f0421d3d2703fa458125b442b07d99a4"
+    "www/img/weapon_43x7.png": {
+      "checksum": "f92b4fcbe575fedf5ee3f69833a37982"
     },
-    "www/img/weapons_43x8.png": {
-      "checksum": "1d961fc54aa2caef9d824d1d64f38f0a"
+    "www/img/weapon_43x8.png": {
+      "checksum": "bfe526f2fb3926ece5d68547197da729"
     },
-    "www/img/weapons_43x9.png": {
-      "checksum": "eab2b1fec7cf582cfa9a03667a603236"
+    "www/img/weapon_43x9.png": {
+      "checksum": "0e117875561d0b1a82f564135e2b00f4"
     },
-    "www/img/weapons_44x1.png": {
-      "checksum": "a043cb4554289c414c9b0e09c7ba5492"
+    "www/img/weapon_44x1.png": {
+      "checksum": "c7b20a2384b3563f0eb018af2da81aaf"
     },
-    "www/img/weapons_44x10.png": {
-      "checksum": "67f217050bbdb066b2686b860d9e686c"
+    "www/img/weapon_44x10.png": {
+      "checksum": "abaab99778b7f29a4d52e627e7559345"
     },
-    "www/img/weapons_44x2.png": {
-      "checksum": "1e40ccc6ea2c6bfe67d9fdf35cc1f951"
+    "www/img/weapon_44x2.png": {
+      "checksum": "97124827629259e997761c65091d31dc"
     },
-    "www/img/weapons_44x3.png": {
-      "checksum": "5b69e5ea7e2c375c7faea5bc6ac09c41"
+    "www/img/weapon_44x3.png": {
+      "checksum": "dc49e4c92843b89122aa50a2425d58dd"
     },
-    "www/img/weapons_44x4.png": {
-      "checksum": "738a48c804ce9ca7b203d624b5fb0b26"
+    "www/img/weapon_44x4.png": {
+      "checksum": "76d628a66a9cb9882001f615bad68118"
     },
-    "www/img/weapons_44x5.png": {
-      "checksum": "aae9e1ff495c47204a363c7d71f419ef"
+    "www/img/weapon_44x5.png": {
+      "checksum": "3fe497b713194107375e132c0b5a8689"
     },
-    "www/img/weapons_44x6.png": {
-      "checksum": "4c56ba9cdc1058f1c1c432d2e442c583"
+    "www/img/weapon_44x6.png": {
+      "checksum": "6fb054cd320f5f077cf7a03c153ab279"
     },
-    "www/img/weapons_44x7.png": {
-      "checksum": "fed9f71b5b81327dadd799ff6304aeac"
+    "www/img/weapon_44x7.png": {
+      "checksum": "04efab66a76b1da7237330654c9207d8"
     },
-    "www/img/weapons_44x8.png": {
-      "checksum": "7b3ecd372537ed29fbc399bdfd14eb39"
+    "www/img/weapon_44x8.png": {
+      "checksum": "9cab82851f4392948736e455de9b86f9"
     },
-    "www/img/weapons_44x9.png": {
-      "checksum": "b1d73f877b93bb2c2cb73662a7a08180"
+    "www/img/weapon_44x9.png": {
+      "checksum": "8784abf090cc1f969b2dbf2b42c41212"
     },
-    "www/img/weapons_45x1.png": {
-      "checksum": "04af20a6361d160137ff1c448e63f91e"
+    "www/img/weapon_45x1.png": {
+      "checksum": "19451436b1519f87c5bcd9c1911b8e96"
     },
-    "www/img/weapons_45x10.png": {
-      "checksum": "2e1daba764a13b7a13bfe5b4919a4ebe"
+    "www/img/weapon_45x10.png": {
+      "checksum": "5dc5e76b14e8f74632bfe3f6c20806ae"
     },
-    "www/img/weapons_45x2.png": {
-      "checksum": "faaa0b9694ecf9426539c67fc33a9a71"
+    "www/img/weapon_45x2.png": {
+      "checksum": "00735b505669933deeec84b4b6787e2a"
     },
-    "www/img/weapons_45x3.png": {
-      "checksum": "215e6d149496a414df1502a2bd39461b"
+    "www/img/weapon_45x3.png": {
+      "checksum": "ca500a09cc74c2b369aaf685ae4bb33d"
     },
-    "www/img/weapons_45x4.png": {
-      "checksum": "17f533a23dc5c30a830ab6f31de97c26"
+    "www/img/weapon_45x4.png": {
+      "checksum": "4b87b66ce1f368194943ac79696ea0b1"
     },
-    "www/img/weapons_45x5.png": {
-      "checksum": "ecc9d6631911cf534b06099d099cefce"
+    "www/img/weapon_45x5.png": {
+      "checksum": "0f85adccc02bf68b73ac47a33b5c20b8"
     },
-    "www/img/weapons_45x6.png": {
-      "checksum": "18e1d684b2ae4ae0b4c87d5ab11147c7"
+    "www/img/weapon_45x6.png": {
+      "checksum": "b617fc1e5bbacc97bddd2210d2620412"
     },
-    "www/img/weapons_45x7.png": {
-      "checksum": "ce6bde69dee7c24b9b88a6ff1288efa8"
+    "www/img/weapon_45x7.png": {
+      "checksum": "5e3aaee8b1a738dcd7fe5b941948846a"
     },
-    "www/img/weapons_45x8.png": {
-      "checksum": "1f4858208ee77817921c5051274319cc"
+    "www/img/weapon_45x8.png": {
+      "checksum": "d1ceafa37d1a966a8dc44bd1e4bd893e"
     },
-    "www/img/weapons_45x9.png": {
-      "checksum": "03497148df2805fc6ee501267b7291f0"
+    "www/img/weapon_45x9.png": {
+      "checksum": "fdd4925d5910a2c3188141795dca7391"
     },
-    "www/img/weapons_46x1.png": {
-      "checksum": "19095cb669aae7b70bf13eacbe0889b5"
+    "www/img/weapon_46x1.png": {
+      "checksum": "06dafc8838d51538f9b892cbcb219d86"
     },
-    "www/img/weapons_46x10.png": {
-      "checksum": "3af7f1691a3b1242742f3953b539f749"
+    "www/img/weapon_46x10.png": {
+      "checksum": "2b04a1cd2025ce0a635dd49be90538f1"
     },
-    "www/img/weapons_46x2.png": {
-      "checksum": "9d40cefaa8f0d985f8db6addb54ee8bc"
+    "www/img/weapon_46x2.png": {
+      "checksum": "7bdd673b5b6c37b128fc86c79ddebb37"
     },
-    "www/img/weapons_46x3.png": {
-      "checksum": "2fad58ded3e0b5c95f4389f280ff4d78"
+    "www/img/weapon_46x3.png": {
+      "checksum": "764aea0af816905e556dbbb4645a7ce5"
     },
-    "www/img/weapons_46x4.png": {
-      "checksum": "d48175a216166257d28c9d0f03fcf3e5"
+    "www/img/weapon_46x4.png": {
+      "checksum": "6f3022d8d0fa25309d1cf368337150bf"
     },
-    "www/img/weapons_46x5.png": {
-      "checksum": "041a6d55a0158ff9c4e38f0e847c8968"
+    "www/img/weapon_46x5.png": {
+      "checksum": "417a7fef1a3fb66b8d78c7bddaa453b2"
     },
-    "www/img/weapons_46x6.png": {
-      "checksum": "f873b2afdf6b61f615476c72b55fae76"
+    "www/img/weapon_46x6.png": {
+      "checksum": "cd1e0fa50e46e962141e0a246aab2f04"
     },
-    "www/img/weapons_46x7.png": {
-      "checksum": "b6156111414335d903d37cd286f5badb"
+    "www/img/weapon_46x7.png": {
+      "checksum": "2368f8d9731ed9fd4e5dea13d724db34"
     },
-    "www/img/weapons_46x8.png": {
-      "checksum": "e976fbce08b70bed62fd860bd2b0947a"
+    "www/img/weapon_46x8.png": {
+      "checksum": "07d1d4798c3d61c3a65f8bf86f69ff61"
     },
-    "www/img/weapons_46x9.png": {
-      "checksum": "3b547954f08980df54c6f45cd22fae2b"
+    "www/img/weapon_46x9.png": {
+      "checksum": "96fe344fefc9ed2f93c13d47d659f0f2"
     },
-    "www/img/weapons_47x1.png": {
-      "checksum": "a3397cefa04bb048a40830941836794c"
+    "www/img/weapon_47x1.png": {
+      "checksum": "a94cd0f093b2ede0dbaebc2c86da6cbe"
     },
-    "www/img/weapons_47x10.png": {
-      "checksum": "d2cc02d30981c252a27dd17d1c1fe224"
+    "www/img/weapon_47x10.png": {
+      "checksum": "09a93a2d9d719b76674d7663201d9eb3"
     },
-    "www/img/weapons_47x2.png": {
-      "checksum": "e420b335e58d979428f82ee9ecb0b671"
+    "www/img/weapon_47x2.png": {
+      "checksum": "86d5ba1f76df3d57755226324c056a0c"
     },
-    "www/img/weapons_47x3.png": {
-      "checksum": "8a58295e920032db61ddced7499a6b81"
+    "www/img/weapon_47x3.png": {
+      "checksum": "acc51378d28892226575dc9040c03aa2"
     },
-    "www/img/weapons_47x4.png": {
-      "checksum": "f5d8eec1852f0869a5cfde3a6e924ba1"
+    "www/img/weapon_47x4.png": {
+      "checksum": "987c26962e1a83c172448f05d5839747"
     },
-    "www/img/weapons_47x5.png": {
-      "checksum": "15081a163aab42cc2629d6046fb4348b"
+    "www/img/weapon_47x5.png": {
+      "checksum": "2f3ce72ca8485d90e180f03fa32aa0fa"
     },
-    "www/img/weapons_47x6.png": {
-      "checksum": "4e7e3bfa800ce3836d0c7465d9b5893c"
+    "www/img/weapon_47x6.png": {
+      "checksum": "fe5564a4036cdb3d5f9ffc0322c45578"
     },
-    "www/img/weapons_47x7.png": {
-      "checksum": "a82d90f4653324b93f85aa54668fd368"
+    "www/img/weapon_47x7.png": {
+      "checksum": "9df805b5a61cb47f44c3cba26f62564a"
     },
-    "www/img/weapons_47x8.png": {
-      "checksum": "4f38614fbf56838fe441a76ae53d4c88"
+    "www/img/weapon_47x8.png": {
+      "checksum": "ff64385ffbb2d7642e543b03505b5de3"
     },
-    "www/img/weapons_47x9.png": {
-      "checksum": "3c9976dcdfd9491ac367622694b2400f"
+    "www/img/weapon_47x9.png": {
+      "checksum": "f239e9b1086c1ccb7c0f3acfe85f3301"
     },
-    "www/img/weapons_48x1.png": {
-      "checksum": "70605b335b051ff673694790b1c2e850"
+    "www/img/weapon_48x1.png": {
+      "checksum": "0ca044b7056b53d17346105c592c8e69"
     },
-    "www/img/weapons_48x10.png": {
-      "checksum": "0b1af2cc4f38f026f96c4383bfdaa0b9"
+    "www/img/weapon_48x10.png": {
+      "checksum": "f5a1fb66363d9d604d99f45f4c4a035f"
     },
-    "www/img/weapons_48x2.png": {
-      "checksum": "c95cbac0763c38cf54925e10cb81d564"
+    "www/img/weapon_48x2.png": {
+      "checksum": "e0fe294008f9dc9867ebeee9b61e8fb2"
     },
-    "www/img/weapons_48x3.png": {
-      "checksum": "51397e4e3ff3a100fb83aee999013b85"
+    "www/img/weapon_48x3.png": {
+      "checksum": "9e250e431fe7c9a9107255337981eaa2"
     },
-    "www/img/weapons_48x4.png": {
-      "checksum": "16dd57f572fa921d1dc029a8829b79ca"
+    "www/img/weapon_48x4.png": {
+      "checksum": "de8ee5a14397498298dad68a2cafd551"
     },
-    "www/img/weapons_48x5.png": {
-      "checksum": "43fcc1860ffb1d913268d662217d6f1d"
+    "www/img/weapon_48x5.png": {
+      "checksum": "98642561a336385bc88dfe4e00c0f342"
     },
-    "www/img/weapons_48x6.png": {
-      "checksum": "441a6775773f9971c9d61b04c918ae12"
+    "www/img/weapon_48x6.png": {
+      "checksum": "3b455b5f862473cf422aa6c642d5a0b9"
     },
-    "www/img/weapons_48x7.png": {
-      "checksum": "21c98558d73717372866adc77030b86d"
+    "www/img/weapon_48x7.png": {
+      "checksum": "31ccfef536c5ebd7fa2146e9c19e9995"
     },
-    "www/img/weapons_48x8.png": {
-      "checksum": "25912350ff8e5a77a146198385563b52"
+    "www/img/weapon_48x8.png": {
+      "checksum": "600eb0a899d62a45a8701b4f4240bea5"
     },
-    "www/img/weapons_48x9.png": {
-      "checksum": "fdd1acd8622ab74d51b28649ad130f50"
+    "www/img/weapon_48x9.png": {
+      "checksum": "3ae263d652e5d6b6213f4abfa7d0aeab"
     },
-    "www/img/weapons_49x1.png": {
-      "checksum": "536f7119a0ed6dd99b66ff6aef8eb7f5"
+    "www/img/weapon_49x1.png": {
+      "checksum": "68b3d4e9dec3d6adbabc6b94add4e22a"
     },
-    "www/img/weapons_49x10.png": {
-      "checksum": "ec5112563e74432f09880f28cca2edba"
+    "www/img/weapon_49x10.png": {
+      "checksum": "47654536a2e666c1f38064f1f95b071f"
     },
-    "www/img/weapons_49x2.png": {
-      "checksum": "bbd90cc51a99765019fde3dae0f01950"
+    "www/img/weapon_49x2.png": {
+      "checksum": "ab69ce5195f877797c0a5dd78ce8ca03"
     },
-    "www/img/weapons_49x3.png": {
-      "checksum": "0012f6272126c99a11343e4277580005"
+    "www/img/weapon_49x3.png": {
+      "checksum": "dbee34c53b3eace6a74b2fb4bd54f48c"
     },
-    "www/img/weapons_49x4.png": {
-      "checksum": "bba6b03a98714638bf6975d4b0da6083"
+    "www/img/weapon_49x4.png": {
+      "checksum": "118d76228b1aa6bddce34edf5be1e5da"
     },
-    "www/img/weapons_49x5.png": {
-      "checksum": "c767f2889fa732439f4c1d65dbdb1ff5"
+    "www/img/weapon_49x5.png": {
+      "checksum": "03efc3462148af4e8fba09b95f9a047f"
     },
-    "www/img/weapons_49x6.png": {
-      "checksum": "99ef0803b0a34f1c80dc08db0ec705b3"
+    "www/img/weapon_49x6.png": {
+      "checksum": "12b024ec1a6cdb0693c74a7ac28bd7ce"
     },
-    "www/img/weapons_49x7.png": {
-      "checksum": "0b25bace2a3e281094ed8754a8186750"
+    "www/img/weapon_49x7.png": {
+      "checksum": "f9349a3086f6cc3703ce5bf49277d40e"
     },
-    "www/img/weapons_49x8.png": {
-      "checksum": "85aa6533bb36572df1b3ca1c971bd7b2"
+    "www/img/weapon_49x8.png": {
+      "checksum": "a514ccd71276f56114c955686671a1e9"
     },
-    "www/img/weapons_49x9.png": {
-      "checksum": "7a8f1ca0f307520703c4921702372a61"
+    "www/img/weapon_49x9.png": {
+      "checksum": "1b7b5dea52bf7087c7e0c32c3d689d66"
     },
-    "www/img/weapons_50x1.png": {
-      "checksum": "8e1928c84a0f48d8069f3ddc70cbc588"
+    "www/img/weapon_50x1.png": {
+      "checksum": "b5ba4f9190063541e7c6ba5e37949df6"
     },
-    "www/img/weapons_50x10.png": {
-      "checksum": "b57c33674f7fa3d03c2e6c0cc970f02a"
+    "www/img/weapon_50x10.png": {
+      "checksum": "8ca5741c9a5d3b27af35e444f831ec47"
     },
-    "www/img/weapons_50x2.png": {
-      "checksum": "d9a679ae76443aec6c83305b943a3be1"
+    "www/img/weapon_50x2.png": {
+      "checksum": "d83a8f48a43d9ac697864436db8ec934"
     },
-    "www/img/weapons_50x3.png": {
-      "checksum": "51624601d5b851c67af87bd5d8df4de2"
+    "www/img/weapon_50x3.png": {
+      "checksum": "b92c9513b39c35295dd5aa0efdba61c6"
     },
-    "www/img/weapons_50x4.png": {
-      "checksum": "d35ea5e4e74e64f8c2334113fb2a0e84"
+    "www/img/weapon_50x4.png": {
+      "checksum": "7e30af046026a960163652d8fb07fe07"
     },
-    "www/img/weapons_50x5.png": {
-      "checksum": "17ab9921ba01d7cd41ee5bfdbbf3f6d1"
+    "www/img/weapon_50x5.png": {
+      "checksum": "5a61f9b41b9b5093662d3fdfabacaaf3"
     },
-    "www/img/weapons_50x6.png": {
-      "checksum": "3a960e96fbc06eaeef53f10c43a6e447"
+    "www/img/weapon_50x6.png": {
+      "checksum": "ecdf8bf1ff435b9b3b62968eaec37431"
     },
-    "www/img/weapons_50x7.png": {
-      "checksum": "12143939a08656e2b9986b5dd467f3ec"
+    "www/img/weapon_50x7.png": {
+      "checksum": "0325b2298911ad6f8655783492b5a849"
     },
-    "www/img/weapons_50x8.png": {
-      "checksum": "993985abc67d1b077f4a8d8a6d20acef"
+    "www/img/weapon_50x8.png": {
+      "checksum": "676ee0a5044fee9fd6b77787b28702cd"
     },
-    "www/img/weapons_50x9.png": {
-      "checksum": "d499171f20916981ecefa50b0bc207d5"
+    "www/img/weapon_50x9.png": {
+      "checksum": "02a77e6560a9eac83866f1422d2eed2e"
     },
-    "www/img/weapons_51x1.png": {
-      "checksum": "10f08cce1c8e78d42c6d1a57f78a6769"
+    "www/img/weapon_51x1.png": {
+      "checksum": "4d4b18ff57a4f4cc521700ba4375a178"
     },
-    "www/img/weapons_51x10.png": {
-      "checksum": "2deaf61dc3361ccdcd0dc6690f07bf87"
+    "www/img/weapon_51x10.png": {
+      "checksum": "31a9911c8c67cb28081744579f7889f0"
     },
-    "www/img/weapons_51x2.png": {
-      "checksum": "2c7e588402bbfba49f92e2fdaa198650"
+    "www/img/weapon_51x2.png": {
+      "checksum": "32a6b3df959a437560ba0fbb015bad89"
     },
-    "www/img/weapons_51x3.png": {
-      "checksum": "234308a43e83032716550ec86c63cf0c"
+    "www/img/weapon_51x3.png": {
+      "checksum": "168793b3f6319be0197d473d6a0170ee"
     },
-    "www/img/weapons_51x4.png": {
-      "checksum": "1fc1025a4736b1c8b40014938b97b2df"
+    "www/img/weapon_51x4.png": {
+      "checksum": "11727ebe5f25cd36a623e5837fceaf5b"
     },
-    "www/img/weapons_51x5.png": {
-      "checksum": "94535edd458ebc63555eb70863e6729f"
+    "www/img/weapon_51x5.png": {
+      "checksum": "0a504d3d59acfbe9566fa6953b7e1c69"
     },
-    "www/img/weapons_51x6.png": {
-      "checksum": "c9f675d17b842b018e1499743f4abdc4"
+    "www/img/weapon_51x6.png": {
+      "checksum": "980f09f5517790001d2a3ac46da398d3"
     },
-    "www/img/weapons_51x7.png": {
-      "checksum": "4cd42698bf25ddb18e53b8c0817be6b2"
+    "www/img/weapon_51x7.png": {
+      "checksum": "6b0d76384187b804757398eb3204a111"
     },
-    "www/img/weapons_51x8.png": {
-      "checksum": "5a2cfa71bd590e0fa4e8af6a044bfcf2"
+    "www/img/weapon_51x8.png": {
+      "checksum": "370f00ea9e61959376ffa6462ed9bf83"
     },
-    "www/img/weapons_51x9.png": {
-      "checksum": "ddc583cf53888de30bb7d22d969e0709"
+    "www/img/weapon_51x9.png": {
+      "checksum": "e3b81ec8c7ac558cf6225bfb29ad1900"
     },
-    "www/img/weapons_52x1.png": {
-      "checksum": "af227dc1340373c311fbdfa9324e5575"
+    "www/img/weapon_52x1.png": {
+      "checksum": "7de0a9cdb95444c1e85f1c30b02e606f"
     },
-    "www/img/weapons_52x10.png": {
-      "checksum": "b12730455a9e8e966a9e63767ad7373f"
+    "www/img/weapon_52x10.png": {
+      "checksum": "da8e313237e839f186872e77714e2b74"
     },
-    "www/img/weapons_52x2.png": {
-      "checksum": "6d209f19c7f2edac779b5f667d3c107b"
+    "www/img/weapon_52x2.png": {
+      "checksum": "9ebfd1c334841640d19607884b1e9e3b"
     },
-    "www/img/weapons_52x3.png": {
-      "checksum": "bab74c310063d4227f3a101553756b46"
+    "www/img/weapon_52x3.png": {
+      "checksum": "609d23d05bf9d75b1beb10ebba978f4f"
     },
-    "www/img/weapons_52x4.png": {
-      "checksum": "72f5537a6bf9357f631eb4528dc3913a"
+    "www/img/weapon_52x4.png": {
+      "checksum": "f43431dc8b4a61692d3ef75111ebfd82"
     },
-    "www/img/weapons_52x5.png": {
-      "checksum": "6d3f83f1b59e686838867cbef4af2daa"
+    "www/img/weapon_52x5.png": {
+      "checksum": "069c017dc4e73b7b56c2213530eafed1"
     },
-    "www/img/weapons_52x6.png": {
-      "checksum": "571763986caf8a2b1482d48e143a4f79"
+    "www/img/weapon_52x6.png": {
+      "checksum": "b16af705bdf8427d7cc51e0380b11927"
     },
-    "www/img/weapons_52x7.png": {
-      "checksum": "34be12eb730292a17222e12d10df7a35"
+    "www/img/weapon_52x7.png": {
+      "checksum": "763d330e487741b5ab87aeff7059c932"
     },
-    "www/img/weapons_52x8.png": {
-      "checksum": "c20ec9ade38d09bd0dbc1edeb99850ed"
+    "www/img/weapon_52x8.png": {
+      "checksum": "ee77e156a66b1fcd7204cc03e215ea3c"
     },
-    "www/img/weapons_52x9.png": {
-      "checksum": "feb5e499c970b08b2cd1ae0de5d6f9ff"
+    "www/img/weapon_52x9.png": {
+      "checksum": "eccba24ca51d577ce220fca0c8a4ee9e"
     },
-    "www/img/weapons_53x1.png": {
-      "checksum": "f1849edbd2ca5d7d5a45b33df9b83e48"
+    "www/img/weapon_53x1.png": {
+      "checksum": "311ffc5b3af684eafae8c551a8ddd2d9"
     },
-    "www/img/weapons_53x2.png": {
-      "checksum": "27c94717f1e80fd36af5dfcf2a7cc680"
+    "www/img/weapon_53x2.png": {
+      "checksum": "9255c2213cd3333475a983910eaa5ab4"
     },
-    "www/img/weapons_53x3.png": {
-      "checksum": "deea55e637175491752b9d3279654dbe"
+    "www/img/weapon_53x3.png": {
+      "checksum": "37a568fc33874a30c2cadf50a30ad517"
     },
-    "www/img/weapons_53x4.png": {
-      "checksum": "5ff66e2f7ca9d16a45f1e1035758bd32"
+    "www/img/weapon_53x4.png": {
+      "checksum": "3525034c721193889edd23b7c2743958"
     },
-    "www/img/weapons_53x5.png": {
-      "checksum": "644538f5093aa2de302e0e5d892d4860"
+    "www/img/weapon_53x5.png": {
+      "checksum": "6fd3ecbfe5f08c12af504e9fa46ab4f6"
     },
-    "www/img/weapons_54x1.png": {
-      "checksum": "81859c88165e99476c9259eaf3fcf5a6"
+    "www/img/weapon_54x1.png": {
+      "checksum": "801f4b4cdb791b29dca50a5fe3f606a1"
     },
-    "www/img/weapons_54x2.png": {
-      "checksum": "44dea83d884631ab756718f5ba984389"
+    "www/img/weapon_54x2.png": {
+      "checksum": "88d8dec6d9a46cf7711980d2e5e341a7"
     },
-    "www/img/weapons_54x3.png": {
-      "checksum": "dd5ba6a20c5674392a14bc8dc3477351"
+    "www/img/weapon_54x3.png": {
+      "checksum": "15e112d6242ad0ee190f5a86011d38e1"
     },
-    "www/img/weapons_54x4.png": {
-      "checksum": "27759fb4fd4748fc5934d32f10d21dee"
+    "www/img/weapon_54x4.png": {
+      "checksum": "76dac38818f746abd4748b8417164eb2"
     },
-    "www/img/weapons_54x5.png": {
-      "checksum": "fd8aa68d82e7e9f391c51639a119fa9c"
+    "www/img/weapon_54x5.png": {
+      "checksum": "9eb54c67f1f54a2f932df38540cd5889"
     },
     "www/License.txt": {
       "checksum": "ddefc8464f867b16b2feca4b42a79460"
