@@ -43,22 +43,29 @@ pick_parts <- function(
 
 }
 
-draw_sprite <- function(parts = pick_parts()) {
-
+read_sprite_parts <- function(parts = pick_parts()) {
   # Read all selected sprite parts
   images <- parts[["body"]] |> magick::image_read()  # start with body
   for (i in 2:length(parts)) {  # append remaining parts
     images <- c(images, magick::image_read(parts[[i]]))
   }
+  images  # magick-image object
+}
 
+sprite_parts_to_nr <- function(parts_magick = read_sprite_parts()) {
   # Write out image mosaic and back in as nativeRaster
   temp_file <- tempfile(fileext = ".png")
   on.exit(file.remove(temp_file))
-  images |> magick::image_mosaic() |> magick::image_write(temp_file)
-  sprite_nr <- temp_file |> png::readPNG(native = TRUE)
+  parts_magick |> magick::image_mosaic() |> magick::image_write(temp_file)
+  temp_file |> png::readPNG(native = TRUE)
+}
 
+draw_sprite_small <- function(parts_magick = read_sprite_parts()) {
+  parts_magick |> magick::image_mosaic()
+}
+
+draw_sprite_arbitrary <- function(sprite_nr = sprite_parts_to_nr()) {
   # Draw nativeRaster to arbitrary size
   grid::grid.newpage()
   grid::grid.raster(sprite_nr, interpolate = FALSE)
-
 }
