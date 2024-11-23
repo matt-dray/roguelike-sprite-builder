@@ -18,7 +18,10 @@ pick_part <- function(
 }
 
 pick_parts <- function(
-    part_files = list.files(file.path("www", "img"), "\\.png$", full.names = TRUE),
+    part_files = list.files(
+      file.path("www", "img"), "\\.png$",
+      full.names = TRUE
+    ),
     part_weights = c(
       "body" = 100,
       "trousers" = 90,
@@ -60,12 +63,7 @@ sprite_parts_to_nr <- function(parts_magick = read_sprite_parts()) {
   temp_file |> png::readPNG(native = TRUE)
 }
 
-draw_sprite_small <- function(parts_magick = read_sprite_parts()) {
-  parts_magick |> magick::image_mosaic()
-}
-
-draw_sprite_arbitrary <- function(sprite_nr = sprite_parts_to_nr()) {
-  # Draw nativeRaster to arbitrary size
+draw_sprite <- function(sprite_nr = sprite_parts_to_nr()) {
   grid::grid.newpage()
   grid::grid.raster(sprite_nr, interpolate = FALSE)
 }
