@@ -31,8 +31,13 @@ ui <- shiny::fluidPage(
         icon = shiny::icon("floppy-disk")
     ),
     shiny::downloadButton(
-        outputId = "dl_sprite_128",
-        label = "PNG 128px",
+        outputId = "dl_sprite_1024",
+        label = "PNG 1024px",
+        icon = shiny::icon("floppy-disk")
+    ),
+    shiny::downloadButton(
+        outputId = "dl_sprite_nr",
+        label = "RDS nativeRaster",
         icon = shiny::icon("floppy-disk")
     ),
     shiny::plotOutput("plot_sprite")
@@ -70,16 +75,25 @@ server <- function(input, output) {
             dev.off()
         })
 
-    output$dl_sprite_128 <- shiny::downloadHandler(
-        filename = \() paste0("sprite_", rv$hash, "_256px.png"),
+    output$dl_sprite_1024 <- shiny::downloadHandler(
+        filename = \() paste0("sprite_", rv$hash, "_1024px.png"),
         content = \(file) {
-            px <- 256
+            px <- 1024
             png(file, width = px, height = px)
             rv$parts |>
                 read_sprite_parts() |>
                 sprite_parts_to_nr() |>
                 draw_sprite()
             dev.off()
+        })
+
+    output$dl_sprite_nr <- shiny::downloadHandler(
+        filename = \() paste0("sprite_", rv$hash, "_nativeRaster.rds"),
+        content = \(file) {
+            rv$parts |>
+                read_sprite_parts() |>
+                sprite_parts_to_nr() |>
+                saveRDS(file)
         })
 
 }
