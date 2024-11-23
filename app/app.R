@@ -26,10 +26,21 @@ ui <- shiny::fluidPage(
         icon = shiny::icon("dice")
     ),
     shiny::downloadButton(
-        outputId = "sprite_download",
+        outputId = "dl_sprite_16",
+        label = "PNG 16px",
         icon = shiny::icon("floppy-disk")
     ),
-    shiny::plotOutput("sprite")
+    shiny::downloadButton(
+        outputId = "dl_sprite_1024",
+        label = "PNG 1024px",
+        icon = shiny::icon("floppy-disk")
+    ),
+    shiny::downloadButton(
+        outputId = "dl_sprite_nr",
+        label = "RDS nativeRaster",
+        icon = shiny::icon("floppy-disk")
+    ),
+    shiny::plotOutput("plot_sprite")
 )
 
 server <- function(input, output) {
@@ -38,7 +49,10 @@ server <- function(input, output) {
 
     create_sprite <- reactive({
         rv$parts <- pick_parts()
-        draw_sprite(rv$parts)
+        rv$parts |>
+            read_sprite_parts() |>
+            sprite_parts_to_nr() |>
+            draw_sprite()
         rv$hash <- rlang::hash(rv$parts)
         cat(rv$hash, sep = "\n")
     }) |>
@@ -47,14 +61,39 @@ server <- function(input, output) {
             ignoreNULL = FALSE  # also fire if input is NULL (i.e. on startup)
         )
 
-    output$sprite <- shiny::renderPlot(create_sprite())
+    output$plot_sprite <- shiny::renderPlot(create_sprite())
 
-    output$sprite_download <- shiny::downloadHandler(
-        filename = \() paste0("sprite_", rv$hash, ".png"),
+    output$dl_sprite_16 <- shiny::downloadHandler(
+        filename = \() paste0("sprite_", rv$hash, "_16px.png"),
         content = \(file) {
-            png(file)
-            draw_sprite(rv$parts)
+            px <- 16
+            png(file, width = px, height = px)
+            rv$parts |>
+                read_sprite_parts() |>
+                sprite_parts_to_nr() |>
+                draw_sprite()
             dev.off()
+        })
+
+    output$dl_sprite_1024 <- shiny::downloadHandler(
+        filename = \() paste0("sprite_", rv$hash, "_1024px.png"),
+        content = \(file) {
+            px <- 1024
+            png(file, width = px, height = px)
+            rv$parts |>
+                read_sprite_parts() |>
+                sprite_parts_to_nr() |>
+                draw_sprite()
+            dev.off()
+        })
+
+    output$dl_sprite_nr <- shiny::downloadHandler(
+        filename = \() paste0("sprite_", rv$hash, "_nativeRaster.rds"),
+        content = \(file) {
+            rv$parts |>
+                read_sprite_parts() |>
+                sprite_parts_to_nr() |>
+                saveRDS(file)
         })
 
 }
