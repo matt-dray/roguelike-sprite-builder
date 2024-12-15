@@ -1,5 +1,13 @@
 source(file.path("R", "build.R"))
 
+# Workaround for Chromium Issue 468227
+# via https://shinylive.io/r/examples/#r-file-download
+downloadButton <- function(...) {
+    tag <- shiny::downloadButton(...)
+    tag$attribs$download <- NULL
+    tag
+}
+
 ui <- shiny::fluidPage(
     shiny::titlePanel("Roguelike Sprite Builder"),
     htmltools::p(
